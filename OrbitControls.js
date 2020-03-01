@@ -1144,19 +1144,19 @@ OrbitControls.prototype.constructor = OrbitControls;
 //    Zoom - middle mouse, or mousewheel / touch: two-finger spread or squish
 //    Pan - left mouse, or arrow keys / touch: one-finger move
 
-var MapControls = function ( object, domElement ) {
+// var MapControls = function ( object, domElement ) {
 
-	OrbitControls.call( this, object, domElement );
+// 	OrbitControls.call( this, object, domElement );
 
-	this.mouseButtons.LEFT = MOUSE.PAN;
-	this.mouseButtons.RIGHT = MOUSE.ROTATE;
+// 	this.mouseButtons.LEFT = MOUSE.PAN;
+// 	this.mouseButtons.RIGHT = MOUSE.ROTATE;
 
-	this.touches.ONE = TOUCH.PAN;
-	this.touches.TWO = TOUCH.DOLLY_ROTATE;
+// 	this.touches.ONE = TOUCH.PAN;
+// 	this.touches.TWO = TOUCH.DOLLY_ROTATE;
 
-};
+// };
 
-MapControls.prototype = Object.create( EventDispatcher.prototype );
-MapControls.prototype.constructor = MapControls;
+// MapControls.prototype = Object.create( EventDispatcher.prototype );
+// MapControls.prototype.constructor = MapControls;
 
-export { OrbitControls, MapControls };
+// export { OrbitControls, MapControls };

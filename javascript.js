@@ -1,6 +1,6 @@
 var loader = new THREE.GLTFLoader();
 
-loader.load( 'path/to/model.glb', function ( gltf ) {
+loader.load( 'path/to/shape_2.glb', function ( gltf ) {
 
 	scene.add( gltf.scene );
 

@@ -69,14 +69,12 @@
 
     <script type="text/javascript" src="three.min.js"></script>
     <script src="GLTFLoader.js"></script>
-  <!--   <script src="OrbitControls.js"></script> -->
 
     <script>
 
     var renderer,
     	scene,
     	camera,
-    	controls,
     	myCanvas = document.getElementById('myCanvas');
 
     //RENDERER
@@ -90,8 +88,7 @@
 
     //CAMERA
     camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-    controls = new OrbitControls( camera, renderer.domElement );
+    // var controls = new OrbitControls( camera, renderer.domElement );
 
     //SCENE
     scene = new THREE.Scene();

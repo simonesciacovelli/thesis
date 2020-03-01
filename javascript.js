@@ -1,14 +1,14 @@
-var loader = new THREE.GLTFLoader();
+// var loader = new THREE.GLTFLoader();
 
-loader.load( 'shape_2.glb', function ( gltf ) {
+// loader.load( 'shape_2.glb', function ( gltf ) {
 
-	scene.add( gltf.scene );
+// 	scene.add( gltf.scene );
 
-}, undefined, function ( error ) {
+// }, undefined, function ( error ) {
 
-	// console.error( error );
+// 	// console.error( error );
 
-});
+// });
 
 var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );

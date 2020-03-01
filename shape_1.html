@@ -73,9 +73,12 @@
 
     <script>
 
+	import { OrbitControls } from './OrbitControls.js';
+
     var renderer,
     	scene,
     	camera,
+    	controls,
     	myCanvas = document.getElementById('myCanvas');
 
     //RENDERER
@@ -89,7 +92,8 @@
 
     //CAMERA
     camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 1000 );
-    var controls = new OrbitControls( camera, renderer.domElement );
+
+    controls = new OrbitControls( camera, renderer.domElement );
 
     //SCENE
     scene = new THREE.Scene();

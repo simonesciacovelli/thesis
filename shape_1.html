@@ -78,16 +78,17 @@
 
 			camera.position.z = 5;
 
-			var animate = function () {
-				requestAnimationFrame( animate );
+			var loader = new GLTFLoader();
+						loader.load( 'shape_2.gltf', function ( gltf ) {
 
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
 
-				renderer.render( scene, camera );
-			};
+							scene.add( gltf.scene );
 
-			animate();
+							roughnessMipmapper.dispose();
+
+							render();
+
+						}
 
 
 </script>

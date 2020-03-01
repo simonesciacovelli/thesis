@@ -129,35 +129,9 @@
         console.log(mesh.children[0]);
         // mesh.children[0].material = new THREE.MeshLambertMaterial();
 		scene.add( mesh );
-        mesh.position.z = -10;
+        // mesh.position.z = -10;
 
     }
-
-
-    //RENDER LOOP
-   //  render();
-
-   //  var delta = 0;
-   //  var prevTime = Date.now();
-
-   //  function render() {
-
-   //      delta += 0.1;
-
-   //      if (mesh) {
-   // //          mesh.rotation.z += delta * 0;
-			// // mesh.rotation.y += delta * 0.1;
-
-   //          //animation mesh
-   //          // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
-   //      }
-
-   //  	renderer.render(scene, camera);
-
-   //  	requestAnimationFrame(render);
-   //  	controls.update();
-   //  }
-
 
     //RENDER LOOP
     render();
@@ -168,17 +142,18 @@
     function render() {
 
         delta += 0.1;
-		
-		if ( mesh !== undefined ) {
-					// mesh.rotation.z += delta * 0;
-					// mesh.rotation.y += delta * 0.1;
-				}
-    
+
+        if (mesh) {
+        
+            mesh.rotation.y += 0.01;
+
+            //animation mesh
+            // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
+        }
 
     	renderer.render(scene, camera);
 
     	requestAnimationFrame(render);
-    	controls.update();
     }
 
 </script>

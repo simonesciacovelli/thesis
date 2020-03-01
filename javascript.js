@@ -1,17 +1,25 @@
 
-// $("p").css("background-color", "yellow");
+AOS.init();
+// var tooltip = document.querySelectorAll('.popinfo');
 
-// $(".bttn").click(function() {
-//     $('html, body').animate({
-//         scrollBottom: $(".container2").offset().top
-//     }, 2000);
+// document.addEventListener('mousemove', fn, false);
+
+// function fn(e) {
+//     for (var i=tooltip.length; i--;) {
+//         tooltip[i].style.left = e.pageX + 'px';
+//         tooltip[i].style.top = e.pageY + 'px';
+//     }
+// }
+
+
+// var divs = $('.shape_1'),
+//     limit = 235;  /* scrolltop value when opacity should be 0 */
+
+// $(window).on('scroll', function() {
+//    var st = $(this).scrollTop();
+
+//    /* avoid unnecessary call to jQuery function */
+//    if (st <= limit) {
+//       divs.css({ 'opacity' : (1 - st/limit) });
+//    }
 // });
-
-$(document).ready(function() {
-
-   $('.bttn').click(function() {
-           $("html,body").stop().animate({scrollTop:$('.container2').offset().top}); });
-});
-
-
-

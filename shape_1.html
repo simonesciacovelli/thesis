@@ -77,7 +77,6 @@
     	scene,
     	camera,
     	myCanvas = document.getElementById('myCanvas');
-    	document.body.appendChild(renderer.domElement)
 
     //RENDERER
     renderer = new THREE.WebGLRenderer({
@@ -87,7 +86,7 @@
     renderer.setClearColor(0x000000);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
-
+	document.body.appendChild(renderer.domElement)
 
     //CAMERA
     camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 1000 );

@@ -100,4 +100,4 @@ var loader = new THREE.GLTFLoader();
 // });
 
 
-AOS.init();
+// AOS.init();

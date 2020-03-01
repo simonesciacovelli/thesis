@@ -6,7 +6,7 @@ loader.load( 'shape_2.glb', function ( gltf ) {
 
 }, undefined, function ( error ) {
 
-	console.error( error );
+	// console.error( error );
 
 });
 

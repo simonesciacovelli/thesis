@@ -1,8 +1,6 @@
 // var loader = new THREE.GLTFLoader();
 
-// loader.load( 'shape_2.glb', function ( gltf ) {
 
-// 	scene.add( gltf.scene );
 
 // }, undefined, function ( error ) {
 
@@ -11,6 +9,7 @@
 // });
 
 var scene = new THREE.Scene();
+var loader = new THREE.GLTFLoader();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
 
 			var renderer = new THREE.WebGLRenderer();
@@ -21,6 +20,9 @@ var scene = new THREE.Scene();
 			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 			var cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
+
+			loader.load( 'shape_2.glb', function ( gltf ) {
+			scene.add( gltf.scene );
 
 			camera.position.z = 5;
 

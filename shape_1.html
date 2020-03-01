@@ -67,11 +67,9 @@
 <script src="js/controls/TrackballControls.js"></script>
 <script src="js/controls/OrbitControls.js"></script> -->
 
-<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
-
-	<script type="text/javascript">
-
-var loader = new THREE.GLTFLoader();
+<script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js">
+	
+	var loader = new THREE.GLTFLoader();
 loader.load(
    "/path/to/shape_2.glb",
    function ( gltf ) {
@@ -86,7 +84,8 @@ loader.load(
    },
 );
 scene.add( bus.frame )
-	</script>
+
+</script>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

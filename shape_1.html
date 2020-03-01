@@ -97,10 +97,10 @@
 	var controls = new THREE.OrbitControls( camera, renderer.domElement );
 				controls.maxPolarAngle = Math.PI * 1;
 				controls.minDistance = 10;
-				controls.maxDistance = 5000;
+				controls.maxDistance = 500;
 				// window.addEventListener( 'resize', onWindowResize, false );
 
-	
+
     //SCENE
     scene = new THREE.Scene();
 
@@ -125,6 +125,7 @@
         // mesh.children[0].material = new THREE.MeshLambertMaterial();
 		scene.add( mesh );
         mesh.position.z = -10;
+
     }
 
 
@@ -140,7 +141,8 @@
 
         if (mesh) {
         
-            mesh.rotation.y += 0.01;
+            mesh.rotation.z += delta * 0;
+			mesh.rotation.y += delta * 0.1;
 
             //animation mesh
             // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;

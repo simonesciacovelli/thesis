@@ -96,7 +96,7 @@
 
 	var controls = new THREE.OrbitControls( camera, renderer.domElement );
 				controls.maxPolarAngle = Math.PI * 1;
-				controls.minDistance = 500;
+				controls.minDistance = 10;
 				controls.maxDistance = 500;
 				// window.addEventListener( 'resize', onWindowResize, false );
 
@@ -165,8 +165,8 @@
         delta += 0.1;
 		
 		if ( mesh !== undefined ) {
-					mesh.rotation.z += delta * 0;
-					mesh.rotation.y += delta * 0.1;
+					// mesh.rotation.z += delta * 0;
+					// mesh.rotation.y += delta * 0.1;
 				}
     
 

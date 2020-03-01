@@ -121,6 +121,10 @@
 	directionalLight.position.set( -1, 0, 1 ).normalize();
 	scene.add( directionalLight );
   
+   var directionalLight2 = new THREE.DirectionalLight( 0xed379b );
+	directionalLight2.position.set( 1, 0, -1 ).normalize();
+	scene.add( directionalLight2 );
+
     var loader = new THREE.GLTFLoader();
 
     loader.load('shape_2.glb', handle_load);

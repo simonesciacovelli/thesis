@@ -130,6 +130,31 @@
 
 
     //RENDER LOOP
+   //  render();
+
+   //  var delta = 0;
+   //  var prevTime = Date.now();
+
+   //  function render() {
+
+   //      delta += 0.1;
+
+   //      if (mesh) {
+   // //          mesh.rotation.z += delta * 0;
+			// // mesh.rotation.y += delta * 0.1;
+
+   //          //animation mesh
+   //          // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
+   //      }
+
+   //  	renderer.render(scene, camera);
+
+   //  	requestAnimationFrame(render);
+   //  	controls.update();
+   //  }
+
+
+    //RENDER LOOP
     render();
 
     var delta = 0;
@@ -138,14 +163,12 @@
     function render() {
 
         delta += 0.1;
-
-        if (mesh) {
-   //          mesh.rotation.z += delta * 0;
-			// mesh.rotation.y += delta * 0.1;
-
-            //animation mesh
-            // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
-        }
+		
+		if ( mesh !== undefined ) {
+					mesh.rotation.z += delta * 0;
+					mesh.rotation.y += delta * 0.1;
+				}
+    
 
     	renderer.render(scene, camera);
 

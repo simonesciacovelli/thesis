@@ -1132,8 +1132,8 @@ var OrbitControls = function ( object, domElement ) {
 
 };
 
-OrbitControls.prototype = Object.create( EventDispatcher.prototype );
-OrbitControls.prototype.constructor = OrbitControls;
+// OrbitControls.prototype = Object.create( EventDispatcher.prototype );
+// OrbitControls.prototype.constructor = OrbitControls;
 
 
 // This set of controls performs orbiting, dollying (zooming), and panning.

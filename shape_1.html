@@ -95,9 +95,9 @@
 
 
 	var controls = new THREE.OrbitControls( camera, renderer.domElement );
-				// controls.maxPolarAngle = Math.PI * 1;
-				// controls.minDistance = 10;
-				// controls.maxDistance = 50;
+				controls.maxPolarAngle = Math.PI * 2;
+				controls.minDistance = 500;
+				controls.maxDistance = 500;
 				// window.addEventListener( 'resize', onWindowResize, false );
 
 
@@ -150,7 +150,7 @@
     	renderer.render(scene, camera);
 
     	requestAnimationFrame(render);
-    	// controls.update();
+    	controls.update();
     }
 
 </script>

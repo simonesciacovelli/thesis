@@ -278,16 +278,16 @@ p{
 
 @media only screen and (max-width: 1024px) {
 
-    .txt{
+    .shape_txt{
       width: 350px
     } 
 
-    h1{
+    .shape_txt h1{
       font-size: 50px;
       padding-left: 16px;
     }
 
-    p{
+    .shape_txt p{
       padding: 20px;
     }
 }

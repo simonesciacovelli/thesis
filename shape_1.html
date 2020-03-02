@@ -65,7 +65,7 @@
 <script src="js/controls/TrackballControls.js"></script>
 <script src="js/controls/OrbitControls.js"></script> -->
 
-<canvas id="myCanvas"></canvas>
+<canvas id="myCanvas" height="300px" width="300px"></canvas>
 
     <script src="three.min.js"></script>
     <script src="GLTFLoader.js"></script>
@@ -91,7 +91,7 @@
 
     renderer.setClearColor(0x000000);
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    // renderer.setSize(window.innerWidth, window.innerHeight);
 	document.body.appendChild(renderer.domElement);
 	// controls = new THREE.OrbitControls(camera, renderer.domElement);
 

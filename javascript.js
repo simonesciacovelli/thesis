@@ -70,5 +70,11 @@
 //    }
 // });
 
+AOS.init();
 
-// AOS.init();
+
+$("#arrowdown").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#myDiv").offset().top
+    }, 2000);
+});

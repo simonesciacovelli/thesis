@@ -276,6 +276,9 @@ p{
   background-color: green;
   position: absolute;
   margin-top: 130px;
+  top: 190px;
+  left: 50%;
+  margin-left: -50px;
 }
 
 /*-----shape pages-----*/

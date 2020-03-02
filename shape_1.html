@@ -72,7 +72,6 @@
     <script src="Detector.js"></script>
     <script src="TrackballControls.js"></script>
     <script src="OrbitControls.js"></script>
-
     <script>
 
     var renderer,
@@ -97,11 +96,12 @@
 	// controls = new THREE.OrbitControls(camera, renderer.domElement);
 
     //CAMERA
-    camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.25, 30 );
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.25, 30 );
     // var controls = new OrbitControls( camera, renderer.domElement );
+    // camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.25, 30 );
 
 	// camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
-	// camera.position.set( - 1.8, 0.6, 2.7 );
+	camera.position.set( - 1.8, 0.6, 2.7 );
 
 	var controls = new THREE.OrbitControls( camera, renderer.domElement );
 				// controls.maxPolarAngle = Math.PI * 1;

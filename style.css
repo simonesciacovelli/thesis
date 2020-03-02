@@ -291,7 +291,32 @@ p{
       padding: 20px;
     }
 }
-
-
-
 /*-----@media-----*/
+
+
+
+
+
+
+
+/*-----@mediashape-----*/
+
+@media only screen and (max-width: 1024px) {
+
+    .txt{
+      width: 350px
+    } 
+
+    h1{
+      font-size: 50px;
+      padding-left: 16px;
+    }
+
+    p{
+      padding: 20px;
+    }
+}
+
+
+
+/*-----@mediashape-----*/

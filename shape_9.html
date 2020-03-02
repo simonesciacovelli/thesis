@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+<!-- -----icon----- -->
+<!-- <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon.png"> -->
+<!-- -----icon----- -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="aos.css">
+<link rel="stylesheet" href="style.css">
+<!-- <script src="GLTFLoader.js"></script> -->
+
+<title>SYSTM</title>
+
+</head>
+
+<div id="arrowdown" class="arrowdown"> <img id="arrowdown" src="arrowdown.png"> </div>
+
+<body>
+
+    <canvas id="myCanvas" height="300px" width="300px"></canvas>
+
+<!-- <div class="header"></div> -->
+
+<!-- <div class="bkigm"><img src="shape_2.png"></div> -->
+
+<!-- <div class="shapedesc_2"><img src="shape_1.png"></div> -->
+
+
+
+
+<!-- <div class="shape_1">
+	<div class="contentinfo">
+	<img src="shape_1.png">
+ 	<span class="popinfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+	</div>
+</div> -->
+ 
+<!-- <script src="js/loaders/ColladaLoader.js"></script>
+<script src="js/Detector.js"></script>
+<script src="js/controls/TrackballControls.js"></script>
+<script src="js/controls/OrbitControls.js"></script> -->
+
+    <script src="three.min.js"></script>
+    <script src="GLTFLoader.js"></script>
+    <script src="Detector.js"></script>
+    <script src="TrackballControls.js"></script>
+    <script src="OrbitControls.js"></script>
+    <script>
+
+    var renderer,
+    	scene,
+    	camera,
+    	myCanvas = document.getElementById('myCanvas');
+
+    //RENDERER
+    renderer = new THREE.WebGLRenderer({
+      canvas: myCanvas, 
+      antialias: true
+    });
+
+    renderer.setClearColor(0x000000);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+	document.body.appendChild(renderer.domElement);
+	// controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+    //CAMERS
+    // camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.25, 30);
+    // camera.position.set( 0, 0, 0 );
+
+    camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 10000 );
+    camera.position.set( 9, 9, 9 );
+
+    // camera = new THREE.OrthographicCamera(45, window.innerWidth / window.innerHeight, 0.25, 30 );
+    // camera.position.set( - 1.8, 0.6, 2.7 );
+    // var controls = new OrbitControls( camera, renderer.domElement );
+    // camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.25, 30 );
+
+	// camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
+
+	var controls = new THREE.OrbitControls(camera, renderer.domElement);
+				// controls.maxPolarAngle = Math.PI * 1;
+				// controls.minDistance = 10;
+				// controls.maxDistance = 500;
+				// window.addEventListener( 'resize', onWindowResize, false );
+				// controls.addEventListener( 'change', render ); // use if there is no animation loop
+				// controls.minDistance = 100;
+				// controls.maxDistance = 100;
+				// controls.target.set( 1000, 50, 1500 );
+				controls.update();
+
+    window.addEventListener( 'resize', onWindowResize, false );
+
+    function onWindowResize() {
+
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize( window.innerWidth, window.innerHeight );
+
+            }
+
+    //SCENE
+    scene = new THREE.Scene();
+
+    //LIGHTS
+    // var light = new THREE.AmbientLight(0xffffff, 2.5);
+    // scene.add(light);
+
+    // var light2 = new THREE.PointLight(0xffffff, 0.5);
+    // scene.add(light2);
+
+    var directionalLight = new THREE.DirectionalLight( 0xffffff );
+	directionalLight.position.set( -1, 0, 1 ).normalize();
+	scene.add( directionalLight );
+  
+   var directionalLight2 = new THREE.DirectionalLight( 0xed379b );
+	directionalLight2.position.set( 1, 0, -1 ).normalize();
+	scene.add( directionalLight2 );
+
+    var loader = new THREE.GLTFLoader();
+
+    loader.load('form_9.glb', handle_load);
+
+    var mesh;
+
+    function handle_load(gltf) {
+
+        console.log(gltf);
+        mesh = gltf.scene;
+        console.log(mesh.children[0]);
+        // mesh.children[0].material = new THREE.MeshLambertMaterial();
+		scene.add( mesh );
+        // mesh.position.z = -10;
+
+    }
+
+    //RENDER LOOP
+    render();
+
+    var delta = 0;
+    var prevTime = Date.now();
+
+    function render() {
+
+        delta += 0.1;
+
+        if (mesh) {
+        
+            mesh.rotation.y += 0.01;
+
+            //animation mesh
+            // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
+        }
+
+    	renderer.render(scene, camera);
+
+    	requestAnimationFrame(render);
+    }
+
+</script>
+
+<div class="intro">
+    <div id="txt" class="txt">
+    <h1>Description</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <br>
+    <br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="aos.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+
+</body>
+</html>

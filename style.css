@@ -273,10 +273,9 @@ p{
 .arrowdown{
   height: 30px;
   width: 30px;
-  background-color: green;
   position: absolute;
   margin-top: 130px;
-  top: 490px;
+  top: 550px;
   cursor: pointer;
   width: 100%;
   display: -webkit-box;

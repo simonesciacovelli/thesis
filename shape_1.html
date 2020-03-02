@@ -82,6 +82,8 @@
     //RENDERER
     renderer = new THREE.WebGLRenderer({
       canvas: myCanvas, 
+      canvas.width  = canvas.clientWidth;
+    canvas.height = canvas.clientHeight;
       antialias: true
     });
 

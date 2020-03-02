@@ -76,5 +76,5 @@ AOS.init();
 $("#arrowdown").click(function() {
     $('html, body').animate({
         scrollTop: $("#txt").offset().top
-    }, 2000);
+    }, 1000);
 });

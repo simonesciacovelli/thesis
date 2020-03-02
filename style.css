@@ -286,8 +286,11 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-
+.arrowdown img{
+  width: 20px;
+  height: auto;
 }
 
 /*-----shape pages-----*/

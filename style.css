@@ -333,7 +333,7 @@ p{
 @media only screen and (max-width: 1024px) {
 
     .txt{
-      /*width: 350px*/
+      width: 350px
     } 
 
     h1{
@@ -343,6 +343,10 @@ p{
 
     p{
       padding: 20px;
+    }
+
+    .arrowdown{
+      top: 440px;
     }
 }
 

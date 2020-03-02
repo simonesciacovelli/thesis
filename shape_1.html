@@ -85,6 +85,11 @@
       canvas: myCanvas, 
       antialias: true
     });
+
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+
     renderer.setClearColor(0x000000);
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -108,6 +113,17 @@
 				controls.maxDistance = 10
 				controls.target.set( 0, 0, - 0.2 );
 				controls.update();
+
+    window.addEventListener( 'resize', onWindowResize, false );
+
+    function onWindowResize() {
+
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+
+                renderer.setSize( window.innerWidth, window.innerHeight );
+
+            }
 
     //SCENE
     scene = new THREE.Scene();

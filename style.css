@@ -124,6 +124,19 @@ p{
   z-index: 100;
   /*width:100%;*/
   transition: 0.4s;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /*object-fit: none;*/
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  object-fit: cover;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 20px;
 }
 
 /*.contentinfo:hover{
@@ -141,19 +154,21 @@ p{
 .shape_1 img{
 	/*width: 520px;*/
   /*border: 1px solid white;*/
-  object-fit: none;
-  object-position: 110% 50%;
+  object-fit: contain;
+  /*object-position: 110% 50%;*/
   border-radius: 10px;
 	height: auto;
 	/*cursor: pointer;*/
   z-index: 20;
   transition: 0.4s;
+  height: 150px;
+  width: 150px;
 }
 
 .shape_1{
   overflow:hidden;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+/*  border-top: 1px solid white;
+  border-bottom: 1px solid white;*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

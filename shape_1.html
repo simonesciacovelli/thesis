@@ -85,13 +85,9 @@
       antialias: true
     });
 
-    renderer.setPixelRatio( window.devicePixelRatio );
-    // renderer.setSize( window.innerWidth, window.innerHeight );
-
-
     renderer.setClearColor(0x000000);
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(300, 300);
 	document.body.appendChild(renderer.domElement);
 	// controls = new THREE.OrbitControls(camera, renderer.domElement);
 

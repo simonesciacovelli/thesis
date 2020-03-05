@@ -203,6 +203,13 @@
     	requestAnimationFrame(render);
     }
 
+    function onTransitionEnd( event ) {
+
+    const element = event.target;
+    element.remove();
+    
+}
+
 </script>
 
 <div class="intro">

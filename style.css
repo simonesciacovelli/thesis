@@ -93,7 +93,7 @@ p{
     display: block;
 }
 
-.popinfo {
+/*.popinfo {
 	font-family: roboto;
 	 color: white;
     display: none;
@@ -106,7 +106,7 @@ p{
     opacity: 0.9;
     width:120px;
     height:auto;
-}
+}*/
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   .popinfo {
@@ -157,7 +157,7 @@ p{
   object-fit: contain;
   /*object-position: 110% 50%;*/
   border-radius: 10px;
-	height: auto;
+	/*height: auto;*/
 	/*cursor: pointer;*/
   z-index: 20;
   transition: 0.4s;

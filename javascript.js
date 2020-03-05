@@ -1,5 +1,3 @@
-
-
 AOS.init();
 
 const loadingManager = new THREE.LoadingManager( () => {

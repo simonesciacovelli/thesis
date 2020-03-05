@@ -15,3 +15,7 @@ $("#arrowdown").click(function() {
         scrollTop: $("#txt").offset().top
     }, 1000);
 });
+
+$(".circleinfo").click(function() {
+    $(".contextmenu").css("opacity", "1");
+});

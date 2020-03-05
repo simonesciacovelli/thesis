@@ -132,7 +132,7 @@
     var mesh;
 
     function handle_load(gltf) {
-
+        $("#loading-screen").css("opacity", "0");
         console.log(gltf);
         mesh = gltf.scene;
         console.log(mesh.children[0]);

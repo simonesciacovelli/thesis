@@ -341,8 +341,30 @@ p{
 
 svg path,
 svg rect{
-  fill: #2cbbf8;
+  fill: #dfdddd;
 }
+
+/*------contextmenutest------*/
+
+.circleinfo{
+
+width: 50px;
+height: 50px;
+
+
+}
+
+.contextmenu{
+
+height: 40px;
+overflow: auto;
+width: 60px;
+
+}
+
+
+/*------contextmenutest------*/
+
 
 
 /*-----shape pages-----*/

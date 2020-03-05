@@ -323,6 +323,7 @@ p{
   justify-content: center;
   z-index: 1000;
   pointer-events: none;
+  transition: 1s opacity;
 }
 
 #loading-screen.fade-out {

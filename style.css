@@ -151,21 +151,6 @@ p{
   transition: 0.4s;
 }*/
 
-.shape_1 img{
-	/*width: 520px;*/
-  /*border: 1px solid white;*/
-  object-fit: contain;
-  /*object-position: 110% 50%;*/
-  border-radius: 10px;
-	/*height: auto;*/
-	/*cursor: pointer;*/
-  z-index: 20;
-  transition: 0.4s;
-  height: 150px;
-  width: 150px;
-  margin-left: 40px;
-}
-
 .shape_1{
   overflow:hidden;
 /*  border-top: 1px solid white;
@@ -183,6 +168,15 @@ p{
   width: 100%;
   margin-bottom: 40px;
 
+}
+
+.shape_1 img{
+  object-fit: contain;
+  z-index: 20;
+  transition: 0.5s;
+  height: 150px;
+  width: auto;
+  margin-left: 40px;
 }
 
 .nvg{

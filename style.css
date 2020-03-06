@@ -56,6 +56,7 @@ html{
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -65,18 +66,20 @@ html{
 }
 
 h1{
-  font-family: roboto;
+  font-family: synthese, sans-serif;
+ /* font-family: roboto;*/
   font-size: 85px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0px;
   /*padding-left: 90px;*/
   color: white;
+  font-style: normal;
 }
 
 
 p{
   margin-top: 0px;
-  font-family: roboto;
+  font-family: synthese, sans-serif;
   font-size: 20px;
   font-weight: 100;
   color: white;

@@ -387,15 +387,17 @@ opacity: 0;
 .infoleft{
   pointer-events: none;
   width: 50%;
+  margin-left: 50%;
   height: 100%;
  /* background-color: green;*/
-  float: right;
+  /*float: left;*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   align-items: center;
+  position: fixed;
   justify-content: center;
 }
 
@@ -403,12 +405,13 @@ opacity: 0;
   pointer-events: none;
   width: 50%;
   height: 100%;
-  /*background-color: blue;*/
+/*  background-color: blue;*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: center;
 }

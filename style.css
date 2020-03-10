@@ -430,16 +430,41 @@ opacity: 0;
   margin-left: 190px;
 }
 
-.path {
+.path1 {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 5s linear forwards;
+  animation-delay: 10s;
+}
+
+.path2 {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+  animation-delay: 15s;
 }
 
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
+}
+
+
+#myChart {
+   height: 690px;
+   width: 690px;
+}
+
+.chartcont{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 /*-----shape pages-----*/
@@ -460,6 +485,10 @@ opacity: 0;
     .shapedesc{
       width: 350px
     } 
+
+    #myChart {
+    /*width:700px;*/
+}
 
     .shapedesc h1{
       font-size: 50px;

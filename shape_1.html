@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="aos.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chart.css">
 <!-- <script src="GLTFLoader.js"></script> -->
 
 <title>SYSTM</title>
@@ -54,13 +55,13 @@
 
 <div class="infoleft">
     <div class="linecont1">
-    <svg class="path" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 407.98 122.21"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><path class="cls-1" d="M378,8H154.77a8,8,0,0,0-5.68,2.36L41.22,118.21"/></svg>
+    <svg class="path2" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 407.98 122.21"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><path class="cls-1" d="M378,8H154.77a8,8,0,0,0-5.68,2.36L41.22,118.21"/></svg>
     </div>
 </div>
 
 <div class="inforight">
     <div class="linecont2">
-    <svg class="path" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 407.98 122.21"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><path class="cls-1" d="M41.22,8H264.48a8.05,8.05,0,0,1,5.69,2.36L378,118.21"/></svg>
+    <svg class="path1" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 407.98 122.21"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><path class="cls-1" d="M41.22,8H264.48a8.05,8.05,0,0,1,5.69,2.36L378,118.21"/></svg>
     </div>
 </div>
 
@@ -243,9 +244,24 @@
     </div>
 </div>
 
+
+<div class="chartcont">
+    <canvas id="myChart" height="550px" width="370px" ></canvas>
+</div>
+
+<div class="intro">
+    <div id="txt" class="txt">
+    <h1>Description</h1>
+    <p></p>
+    </div>
+</div>
+
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="aos.js"></script>
+<script type="text/javascript" src="chart.min.js"></script>
+<script type="text/javascript" src="chartjs-plugin-deferred.js"></script>
 <script type="text/javascript" src="javascript.js"></script>
 
 </body>

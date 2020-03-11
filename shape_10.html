@@ -44,6 +44,12 @@
 </div>
 <!-- -----loader------ -->
 
+<div class="contextmenubox">
+    <div class="contextmenu"> 
+        <p>FRM_A01 appears as a soft body, composed of swift and yet subdle movmements, sinuos and enigmatic.</p>
+    </div>
+</div>
+
 
 <div id="arrowdown" class="arrowdown"> <img id="arrowdown" src="arrowdown.png"> </div>
 
@@ -157,6 +163,13 @@
 
     function handle_load(gltf) {
         $("#loading-screen").css("opacity", "0");
+
+                $(function () {
+            $(".contextmenu").delay(50).fadeIn('slow', function () {
+                $(this).delay(5000).fadeOut('slow');
+            });
+        });
+
         console.log(gltf);
         mesh = gltf.scene;
         console.log(mesh.children[0]);

@@ -353,18 +353,18 @@ z-index: 100;
 }*/
 
 .contextmenu{
-  height: 240px;
+  height: 220px;
   width: 200px;
   position: absolute;
   background-color: white;
   border-radius: 20px;
   left: 0; 
-  right: 0; 
+  right: 0;
   margin-left: auto; 
   margin-right: auto;
   background-color: rgba(13, 13, 13, 0.5);
   padding: 20px;
-  top: 180px;
+  top: 220px;
   pointer-events: none;
 }
 
@@ -372,6 +372,8 @@ z-index: 100;
   color: white;
   font-size: 20px;
   font-weight: 200;
+  margin: 0px;
+  padding: 20px
 }
 
 
@@ -504,6 +506,11 @@ z-index: 100;
     .shapedesc p{
       padding: 20px;
     }
+
+    /*.contextmenu{
+      top:200px;
+    }*/
+
 }
 /*-----@media-----*/
 
@@ -520,6 +527,13 @@ z-index: 100;
     .txt{
       width: 350px
     } 
+
+    .contextmenu p {
+        color: white;
+        font-size: 20px;
+        font-weight: 200;
+        margin: 0px;
+}
 
     h1{
       font-size: 50px;

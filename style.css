@@ -30,6 +30,7 @@ html{
 .intro, .colors, .movement{
   width: 100%;
   height: auto;
+  z-index: 2000;
   /*border-bottom: 1px solid white;*/
   background-color:black;
   display: -webkit-box;
@@ -360,6 +361,7 @@ z-index: 100;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  z-index: 1900;
   align-items: center;
   position: fixed;
   justify-content: center;

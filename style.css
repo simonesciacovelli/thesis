@@ -364,7 +364,7 @@ z-index: 100;
   margin-right: auto;
   background-color: rgba(13, 13, 13, 0.5);
   padding: 20px;
-  top: 220px;
+  top: 210px;
   pointer-events: none;
 }
 
@@ -512,6 +512,7 @@ z-index: 100;
     }*/
 
 }
+
 /*-----@media-----*/
 
 

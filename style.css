@@ -112,17 +112,6 @@ p{
     height:auto;
 }*/
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .popinfo {
-    -webkit-backdrop-filter: blur(40px);
-    backdrop-filter: blur(40px);
-    background-color: rgba(13, 13, 13, 0.5);  
-  }
-  .warning {
-    display: none;
-  }
-}
-
 .contentinfo{
   /*padding: 10px;*/
   z-index: 100;
@@ -350,7 +339,7 @@ svg rect{
 
 /*------contextmenutest------*/
 
-.circleinfo{
+/*.circleinfo{
 width: 60px;
 height: 60px;
 top: 300px;
@@ -361,23 +350,37 @@ opacity: 0.5;
 cursor: pointer;
 background-color: white;
 z-index: 100;
-}
+}*/
 
 .contextmenu{
-height: auto;
+height: 240px;
 width: 200px;
 position: absolute;
 background-color: white;
 border-radius: 20px;
 top:300px;
+background-color: rgba(13, 13, 13, 0.5);
+padding: 20px;
 left: 55%;
-opacity: 0;
+opacity: 1;
+cursor:all-scroll;
 }
 
 .contextmenu p {
-  color: black;
+  color: white;
   font-size: 20px;
   font-weight: 200;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .popinfo {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    background-color: rgba(13, 13, 13, 0.5);  
+  }
+  .warning {
+    display: none;
+  }
 }
 
 

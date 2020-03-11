@@ -16,10 +16,10 @@ $("#arrowdown").click(function() {
     }, 1000);
 });
 
-$(".circleinfo").click(function() {
-    $(".contextmenu").css("opacity", "1");
-});
 
+  $( function() {
+    $( ".contextmenu" ).draggable();
+  } );
 
 Chart.Legend.prototype.afterFit = function() {
     this.height = this.height + 50;

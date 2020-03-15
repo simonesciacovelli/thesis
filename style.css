@@ -14,15 +14,6 @@ html, body{
   height: 100%;
 }
 
-.menunav{
-  width: 100%;
-  height: 80px;
-  background-color: #181818;
-  position: fixed;
-  z-index: 500;
-  border
-}
-
 html{
 	background-color: black;
 }
@@ -504,15 +495,109 @@ z-index: 100;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
 
+.heroimg img{
+  width: 300px;
+  height: auto;
 }
 
 /*-----shape pages-----*/
 
 
 
+/*------nav--------*/
 
 
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-color: rgba(13, 13, 13, 0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .sidenav {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    background-color: rgba(13, 13, 13, 0.5);  
+  }
+  .warning {
+    display: none;
+  }
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  font-family: source-sans-pro, sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.menunav{
+  width: auto;
+  height: 60px;
+  background-color: rgba(13, 13, 13, 0.5);
+ /* background-color: white;*/
+  position: fixed;
+  z-index: 500;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-right-radius: 20px;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .menunav {
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    background-color: rgba(13, 13, 13, 0.5);  
+  }
+  .warning {
+    display: none;
+  }
+}
+
+.hmenu{
+  /*color: #818181;*/
+  color: white;
+  padding: 20px;
+}
+
+/*------nav--------*/
 
 
 

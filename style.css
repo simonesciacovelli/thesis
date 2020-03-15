@@ -517,7 +517,7 @@ z-index: 100;
   z-index: 600;
   top: 0;
   left: 0;
-  background-color: rgba(13, 13, 13, 0.5);
+  /*background-color: rgba(13, 13, 13, 0.5);*/
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;

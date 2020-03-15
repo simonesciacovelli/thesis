@@ -523,17 +523,6 @@ z-index: 100;
   padding-top: 60px;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .sidenav {
-    -webkit-backdrop-filter: blur(40px);
-    backdrop-filter: blur(40px);
-    background-color: rgba(13, 13, 13, 0.5);  
-  }
-  .warning {
-    display: none;
-  }
-}
-
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
@@ -581,7 +570,7 @@ z-index: 100;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .menunav {
+  .menunav .sidenav {
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     background-color: rgba(13, 13, 13, 0.5);  

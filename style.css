@@ -35,7 +35,7 @@ html{
 }
 
 .colors{
-  margin-bottom: 120px;
+  margin-bottom: 20px;
 }
 
 .header{
@@ -116,11 +116,12 @@ p{
   /*object-fit: none;*/
   align-items: center;
   justify-content: center;
-  height: 200px;
+  flex-direction: column;
+  height: 800px;
   object-fit: cover;
   width: 350px;
-  border: 1px solid white;
-  border-radius: 15px;
+  /*border: 1px solid white;
+  border-radius: 15px;*/
 }
 
 /*.contentinfo:hover{
@@ -148,7 +149,6 @@ p{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 200px;
   width: 100%;
   margin-bottom: 40px;
 
@@ -158,9 +158,9 @@ p{
   object-fit: contain;
   z-index: 20;
   transition: 0.5s;
-  height: 150px;
+  height: 350px;
   width: auto;
-  margin-left: 40px;
+  /*margin-left: 40px;*/
 }
 
 .nvg{
@@ -175,7 +175,7 @@ p{
   height: 50px;
   width:100%;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
   transition: 0.5s;
 }
 

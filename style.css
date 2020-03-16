@@ -504,7 +504,7 @@ z-index: 100;
   z-index: 600;
   top: 0;
   left: 0;
-  background-color: rgba(13, 13, 13, 0.5);
+  background-color: rgba(13, 13, 13, 1);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -557,7 +557,7 @@ z-index: 100;
 }
 
 @supports (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em)) {
-  .menunav, .sidenav, .contextmenu{
+  .menunav, .contextmenu{
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     background-color: rgba(13, 13, 13, 0.5);  

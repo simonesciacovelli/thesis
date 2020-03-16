@@ -377,19 +377,6 @@ z-index: 100;
   padding: 20px
 }
 
-
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .contextmenu {
-    -webkit-backdrop-filter: blur(40px);
-    backdrop-filter: blur(40px);
-    background-color: rgba(13, 13, 13, 0.5);  
-  }
-  .warning {
-    display: none;
-  }
-}
-
-
 /*------contextmenutest------*/
 
 
@@ -569,8 +556,8 @@ z-index: 100;
   border-bottom-right-radius: 20px;
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  .menunav, .sidenav {
+@supports (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em)) {
+  .menunav, .sidenav, .contextmenu{
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     background-color: rgba(13, 13, 13, 0.5);  

@@ -152,3 +152,8 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 
+$("#button").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#myDiv").offset().top
+    }, 2000);
+});

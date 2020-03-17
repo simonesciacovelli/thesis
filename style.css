@@ -359,7 +359,7 @@ z-index: 100;
 }
 
 .contextmenu{
-  height: 220px;
+  height: auto;
   width: 200px;
   position: absolute;
   background-color: white;

@@ -190,7 +190,14 @@ p{
 }
 
 
+#Layer_1{
+  height: auto;
+  width: 100%;
+}
 
+.anatomygraph{
+  height: auto;
+}
 
 
 

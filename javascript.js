@@ -134,6 +134,16 @@ anime({
   loop: true
 });
 
+anime({
+  targets: '.cls-3',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 2500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
+
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }

@@ -1,5 +1,9 @@
 AOS.init();
 
+// videojs('#my-video').ready(function() {
+//     this.play();
+// });
+
 const loadingManager = new THREE.LoadingManager( () => {
 
     const loadingScreen = document.getElementById( 'loading-screen' );

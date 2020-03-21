@@ -28,6 +28,16 @@ html, body{
   justify-content: center;
 }
 
+.video-js .vjs-big-play-button{
+  background-color: black !important;
+  border-radius: 0px !important;
+  border:0px !important;
+}
+
+.vjs-control-bar{
+  display: none !important;
+}
+
 html{
 	background-color: black;
 }

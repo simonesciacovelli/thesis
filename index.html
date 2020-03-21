@@ -20,9 +20,10 @@
 <link rel="stylesheet" href="chart.css">
 <link rel="stylesheet" href="https://use.typekit.net/fxy6maj.css">
 
- <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+<link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
+<!--  <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" /> -->
 <!-- <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" /> -->
-<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
 
 
 
@@ -62,14 +63,15 @@
 
 <!-- ----shortfilm---- -->
 <div class="videocont">
-	<video 
+	<video style="width: 100%; height: 100%" 
 		id="my-video"
-	    class="video-js"
+	    class="video-js vjs-default-skin vjs-big-play-centered"
 	    preload="auto"
 	    width="100%"
 	    poster="poster.png"
 	    controls="play"
-	    height="100%">
+	    height="100%"
+	    data-setup="{}">
 	    <source src="title.mp4" type="video/mp4" />
 	</video>
 </div>
@@ -339,7 +341,8 @@
 <script type="text/javascript" src="chartjs-plugin-deferred.js"></script>
 <script src="anime.min.js"></script>
 <script type="text/javascript" src="javascript.js"></script>
-<!-- <script src="https://vjs.zencdn.net/7.6.6/video.js"></script> -->
+
+<script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
 
 </body>
 </html>

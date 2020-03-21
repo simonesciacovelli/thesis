@@ -4,6 +4,7 @@ AOS.init();
 //     this.play();
 // });
 
+
 const loadingManager = new THREE.LoadingManager( () => {
 
     const loadingScreen = document.getElementById( 'loading-screen' );

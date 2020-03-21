@@ -32,9 +32,45 @@ html, body{
   background-color: black !important;
   border-radius: 0px !important;
   border:0px !important;
+  color: white !important;
 }
 
 .vjs-control-bar{
+  /*display: none !important;*/
+  background-color: white !important;
+}
+
+.video-js .vjs-control-bar{
+  width: 120px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: auto !important;
+  margin-bottom: 20px !important;
+
+}
+
+.video-js{
+  color: black !important;
+}
+
+.video-js .vjs-volume-level{
+  background-color: #7385AC !important;
+}
+
+.video-js button{
+  color: black !important;
+}
+
+.video-js .vjs-progress-control{
+    display: none !important;
+}
+
+.video-js .vjs-picture-in-picture-control{
+display: none !important;
+}
+
+.video-js .vjs-time-control{
   display: none !important;
 }
 

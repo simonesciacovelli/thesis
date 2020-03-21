@@ -37,6 +37,10 @@ html, body{
   justify-content: center;
 }
 
+.video-js .vjs-volume-panel{
+  display: none !important;
+}
+
 .video-js .vjs-big-play-button{
   background-color: black !important;
   border-radius: 0px !important;
@@ -50,8 +54,8 @@ html, body{
 }
 
 .video-js .vjs-control-bar{
-  width: 120px;
-  border-radius: 10px;
+  width: 100px;
+  border-radius: 50px;
   align-items: center;
   justify-content: center;
   margin: auto !important;

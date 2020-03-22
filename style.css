@@ -378,6 +378,19 @@ p{
   justify-content: center;
 }
 
+  #arrowdown{
+  padding-right: 20px;
+  background-color: black;
+  border-radius: 9px;
+  padding-left: 20px;
+  transition: 0.5s;
+}
+
+  #arrowdown:hover{
+  background-color: #121212;
+  transition: 0.5s;
+}
+
 .arrowdown img{
   width: 50px;
   height: auto;

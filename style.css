@@ -69,6 +69,11 @@ html, body{
 
 .video-js{
   color: black !important;
+
+}
+
+video{
+  border-radius: 40px;
 }
 
 .video-js .vjs-volume-level{

@@ -129,6 +129,8 @@ var myChart = new Chart(ctx, {
 
 
 
+
+
 anime({
   targets: '.cls-1',
   strokeDashoffset: [anime.setDashoffset, 0],

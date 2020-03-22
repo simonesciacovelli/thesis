@@ -567,6 +567,7 @@ z-index: 100;
   flex-direction: column;
   justify-content: center;
   flex-direction: column;
+  margin-top: 90px;
 }
 
 .infocard p {

@@ -267,6 +267,27 @@ p{
   transition: 0.5s;
 }
 
+.nvgbk{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  width:100%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  transition: 0.5s;
+}
+
+.nvgbk:hover{
+  margin-right: 30px;
+  transition: 0.5s;
+}
+
 #arrow{
   height: 60px;
   width: 60px;
@@ -588,6 +609,7 @@ z-index: 100;
   justify-content: center;
   flex-direction: column;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .infocard p {

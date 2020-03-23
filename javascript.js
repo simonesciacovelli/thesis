@@ -166,5 +166,5 @@ $("#button").click(function() {
 });
 
 if($('.contextmenu').css('opacity') == 0) {
-    $('#arrowdown').css('opacity') == 1;
+    $('.arrowdown').css('opacity') == 1;
 }

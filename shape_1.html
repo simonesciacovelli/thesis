@@ -157,6 +157,11 @@
             });
         });
 
+        $(function () {
+            $(".arrowdown").delay(5002).fadeIn('slow', function () {
+                });
+        });
+
         console.log(gltf);
         mesh = gltf.scene;
         console.log(mesh.children[0]);

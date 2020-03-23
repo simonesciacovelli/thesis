@@ -164,3 +164,7 @@ $("#button").click(function() {
         scrollTop: $("#myDiv").offset().top
     }, 2000);
 });
+
+if($('.contextmenu').css('opacity') == 0) {
+    $('#arrowdown').css('opacity') == 1;
+}

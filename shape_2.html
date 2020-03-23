@@ -12,10 +12,11 @@
 <link rel="apple-touch-icon" sizes="152x152" href="favicon.png"> -->
 <!-- -----icon----- -->
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/fxy6maj.css">
 <link rel="stylesheet" href="aos.css">
 <link rel="stylesheet" href="style.css">
-<!-- <script src="GLTFLoader.js"></script> -->
+<link rel="stylesheet" href="chart.css">
+<link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
 
 <title>SYSTM</title>
 
@@ -205,18 +206,13 @@
 
 </script>
 
+
+<!-- -------infosection------- -->
+
 <div class="intro">
     <div id="txt" class="txt">
-    <h1>Description</h1>
+    <h1>FRM_A01</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    <br>
-    <br>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -226,10 +222,43 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<div class="infocard">
 
+<div class="chartcont">
+    <canvas id="myChart" height="350px" width="370px" ></canvas>
+<p>This graph indicates the different colors this shape commonly appropriates.</p>
+ </div>
+
+<div class="freq">
+       <svg class="el" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 957.4 216.24"><defs><style>.cls-1{fill:none;stroke-miterlimit:20;stroke:url(#linear-gradient);}</style><linearGradient id="linear-gradient" x1="90.09" y1="108.12" x2="867.31" y2="108.12" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.52" stop-color="#fff"/><stop offset="0.99" stop-opacity="0"/></linearGradient></defs><path stroke-width="4" class="cls-1" d="M867,93.69a92.78,92.78,0,0,0-131.9-.7L704.8,123.25a92.77,92.77,0,0,1-131.89-.7L544.65,93.69a92.78,92.78,0,0,0-131.9-.7l-30.26,30.26a92.77,92.77,0,0,1-131.89-.7L222.34,93.69A92.77,92.77,0,0,0,90.45,93"/></svg>
+    <p>The frequency of this shape is consistently at level 1.</p>
+</div>
+
+</div>
+
+<div class="heroimg">
+        <video autoplay loop muted playsinline style="width: 480px; height: 480px" 
+        id="my-video"
+        class="video-js vjs-default-skin vjs-big-play-centered"
+        preload="auto"
+        nativeControlsForTouch="false"
+        width="100%"
+        height="100%"
+        data-setup="{'nativeControlsForTouch: false'}">
+        <source src="shape2.mp4" type="video/mp4" />
+    </video>
+</div>
+
+<!-- -------infosection------- -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="aos.js"></script>
+<script type="text/javascript" src="chart.min.js"></script>
+<script type="text/javascript" src="chartjs-plugin-deferred.js"></script>
+<script src="anime.min.js"></script>
 <script type="text/javascript" src="javascript.js"></script>
+<script src="https://vjs.zencdn.net/7.6.6/video.js"></script>
 
 </body>
 </html>

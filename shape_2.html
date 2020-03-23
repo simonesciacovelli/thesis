@@ -164,9 +164,10 @@
     function handle_load(gltf) {
         $("#loading-screen").css("opacity", "0");
 
-                $(function () {
+        $(function () {
             $(".contextmenu").delay(50).fadeIn('slow', function () {
                 $(this).delay(5000).fadeOut('slow');
+                $("#arrowdown").delay(5000).fadeIn('slow');
             });
         });
 

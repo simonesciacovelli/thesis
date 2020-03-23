@@ -165,6 +165,6 @@ $("#button").click(function() {
     }, 2000);
 });
 
-if($('contextmenu').css('opacity') == 0) {
-    $('arrowdown').css('opacity') == 1;
+if($(".contextmenu").css("display", "none")); {
+    $('.arrowdown').css('opacity') == 1;
 }

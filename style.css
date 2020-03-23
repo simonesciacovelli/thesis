@@ -375,7 +375,6 @@ p{
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  opacity: 0;
   justify-content: center;
 }
 

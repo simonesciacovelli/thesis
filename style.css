@@ -376,13 +376,14 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
+  transition: 1s;
 }
 
   #arrowdown{
   padding-right: 20px;
   background-color: black;
   border-radius: 9px;
-  display: none;
   padding-left: 20px;
   transition: 0.5s;
 }

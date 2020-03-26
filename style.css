@@ -228,8 +228,12 @@ p{
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  flex-direction: column;
+/*  flex-direction: row;*/
   justify-content: center;
+}
+
+.video-js .vjs-tech {
+  position: relative !important;
 }
 
 .nvg{

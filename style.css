@@ -219,7 +219,11 @@ p{
 .imgcont{
   width: 200px;
   height: 200px;
-  border-radius: 20px;
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -khtml-border-radius: 20px !important;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   object-fit: contain;
   overflow: hidden;
   display: -webkit-box;
@@ -232,8 +236,19 @@ p{
   justify-content: center;
 }
 
+video{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -khtml-border-radius: 20px;
+}
+
 .video-js .vjs-tech {
   position: relative !important;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -khtml-border-radius: 20px;
 }
 
 .nvg{

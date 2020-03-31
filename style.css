@@ -117,6 +117,34 @@ html{
   justify-content: center;
 }
 
+.sept, .sept2, .sept3, .sept4{
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin: 0px;
+  overflow: hidden;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.space{
+  height: 420px;
+  width: 100%;
+}
+
+.sept img{
+  top: 10px;
+
+}
+
+.sept2 img{
+  margin-right: 129px
+}
+
 .colors{
   margin-bottom: 20px;
 }
@@ -124,6 +152,7 @@ html{
 .header{
   width: 100%;
   height: 500px;
+  margin-bottom: 120px;
   /*border-bottom: 1px solid white;*/
   display: -webkit-box;
   display: -moz-box;
@@ -283,7 +312,7 @@ video{
   justify-content: center;
   height: 50px;
   width:100%;
-  margin-bottom: 60px;
+  margin-bottom: 120px;
   margin-top: 60px;
   transition: 0.5s;
 }

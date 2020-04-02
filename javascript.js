@@ -4,24 +4,53 @@ AOS.init();
 //     this.play();
 // });
 
-$('video').each(function(){
-    if ($(this).is(":in-viewport")) {
-        $(this)[0].play();
-    } else {
-        $(this)[0].pause();
-    }
-})
+function isInView(el) {
+    windowTop = $(window).scrollTop();
+    windowButtom = windowTop + $(window).height();
+    elTop = $(el).offset().top;
+    elButtom = elTop + $(el).height();
+
+    return (elTop >= windowTop && elButtom <= windowButtom);
+}
+
+$(window).scroll(function() {
+    $('video').each(function() {
+        if(isInView(this)) {
+            this.play();
+        } else {
+            this.pause();
+        }
+    });
+});
 
 
-const loadingManager = new THREE.LoadingManager( () => {
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.imgcont').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+            
+        }); 
+    });
+});
 
-    const loadingScreen = document.getElementById( 'loading-screen' );
-    loadingScreen.classList.add( 'fade-out' );
 
-    // optional: remove loader from DOM via event listener
-    loadingScreen.addEventListener( 'transitionend', onTransitionEnd );
+// const loadingManager = new THREE.LoadingManager( () => {
 
-} );
+//     const loadingScreen = document.getElementById( 'loading-screen' );
+//     loadingScreen.classList.add( 'fade-out' );
+
+//     // optional: remove loader from DOM via event listener
+//     loadingScreen.addEventListener( 'transitionend', onTransitionEnd );
+
+// } );
+
+
 
 $("#arrowdown").click(function() {
     $('html, body').animate({

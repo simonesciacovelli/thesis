@@ -14,33 +14,27 @@ function isInView(el) {
 }
 
 $(window).scroll(function() {
-    $('video').each(function() {
+    $('.imgcont').find("video").each(function() {
         if(isInView(this)) {
             this.play();
-                $(".imgcont").each(function(){
-                $(this).animate({'opacity':'1'},1000);
-                });
+            $(this).css('opacity', '1');
         } else {
             this.pause();
+            $(this).css('opacity', '0');
         }
     });
 });
 
+$(window).scroll(function() {
+    $('.imgcont').each(function() {
+        if(isInView(this)) {
+               $(this).css('opacity', '1');
+        } else {
+                $(this).css('opacity', '0');
+        }
+    });
+});
 
-// $(document).ready(function() {
-//     $(window).scroll( function(){
-//         $('.imgcont').each( function(i){
-            
-//             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-//             var bottom_of_window = $(window).scrollTop() + $(window).height();
-            
-//             if( bottom_of_window > bottom_of_element ){
-//                 $(this).animate({'opacity':'1'},1000);
-//             }
-            
-//         }); 
-//     });
-// });
 
 
 // const loadingManager = new THREE.LoadingManager( () => {

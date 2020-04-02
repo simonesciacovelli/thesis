@@ -261,6 +261,7 @@ p{
   display: -webkit-flex;
   display: flex;
   opacity: 0;
+  transition: 0.8s;
   align-items: center;
 /*  flex-direction: row;*/
   justify-content: center;
@@ -271,6 +272,7 @@ video{
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -khtml-border-radius: 20px;
+  transition: 0.5s;
 }
 
 .video-js .vjs-tech {

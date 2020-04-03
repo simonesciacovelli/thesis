@@ -13,17 +13,17 @@ function isInView(el) {
     return (elTop >= windowTop && elButtom <= windowButtom);
 }
 
-$(window).scroll(function() {
-    $('.imgcont').find("video").each(function() {
-        if(isInView(this)) {
-            this.play();
-            $(this).css('opacity', '1');
-        } else {
-            this.pause();
-            $(this).css('opacity', '0');
-        }
-    });
-});
+// $(window).scroll(function() {
+//     $('.imgcont').find("video").each(function() {
+//         if(isInView(this)) {
+//             this.play();
+//             $(this).css('opacity', '1');
+//         } else {
+//             this.pause();
+//             $(this).css('opacity', '0');
+//         }
+//     });
+// });
 
 $(window).scroll(function() {
     $('.imgcont').each(function() {

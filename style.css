@@ -134,6 +134,19 @@ html{
 .space{
   height: 420px;
   width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sline{
+  height: 10px;
+  width: 300px;
+  border-top: 1px solid white;
 }
 
 .sept img{
@@ -222,9 +235,15 @@ p{
 
 
 .contentinfo h1{
-  padding-left: 0px !important;
   margin-bottom: 20px;
+  margin-top: 30px;
   font-weight: 100;
+  font-size: 30px;
+  background-color: #121212;
+  padding: 15px;
+  padding-left: 34px;
+  padding-right: 34px;
+  border-radius: 10px;
 }
 
 .shape_1{
@@ -302,7 +321,7 @@ video{
   height: 50px;
   width:100%;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
   transition: 0.5s;
 }
 
@@ -845,6 +864,7 @@ z-index: 100;
 
     p{
       padding: 20px;
+      padding-top: 5px;
     }
 
     .arrowdown{

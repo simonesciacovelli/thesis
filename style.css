@@ -220,6 +220,12 @@ p{
   border-radius: 15px;*/
 }
 
+
+.contentinfo h1{
+  padding-left: 0px !important;
+  margin-bottom: 20px;
+}
+
 .shape_1{
   overflow:hidden;
 /*  border-top: 1px solid white;
@@ -295,7 +301,7 @@ video{
   height: 50px;
   width:100%;
   margin-bottom: 20px;
-  margin-top: 60px;
+  margin-top: 20px;
   transition: 0.5s;
 }
 

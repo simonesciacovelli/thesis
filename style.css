@@ -170,9 +170,9 @@ html{
 }
 
 h1{
-  font-family: escrow-banner, serif;
+  font-family: laca-text, sans-serif;
   font-size: 85px;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: 0px;
   /*padding-left: 90px;*/
   color: white;
@@ -224,6 +224,7 @@ p{
 .contentinfo h1{
   padding-left: 0px !important;
   margin-bottom: 20px;
+  font-weight: 100;
 }
 
 .shape_1{

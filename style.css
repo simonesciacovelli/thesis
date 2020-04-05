@@ -162,11 +162,12 @@ margin-bottom: 200px;
   width: 307px;
   margin-top: 21px;
   background-image: url("shape_10.png");
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+  background-attachment: scroll;
 }
 
 .imgbox2{
@@ -174,11 +175,12 @@ margin-bottom: 200px;
   width: 307px;
   margin-top: 21px;
   background-image: url("shape_9.png");
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+  background-attachment: scroll;
 }
 
 .imgbox3{
@@ -186,11 +188,12 @@ margin-bottom: 200px;
   width: 307px;
   margin-top: 21px;
   background-image: url("shape_6.png");
-  background-attachment: fixed;
+/*  background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+  background-attachment: scroll;
 }
 
 .imgbox4{
@@ -198,11 +201,12 @@ margin-bottom: 200px;
   width: 307px;
   margin-top: 21px;
   background-image: url("shape_3.png");
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
+  background-attachment: scroll;
 }
 
 .param{
@@ -903,6 +907,11 @@ z-index: 100;
     .shapedesc{
       width: 350px
     } 
+
+    .imgbox, .imgbox2, .imgbox3, .imgbox4{
+      /*background-attachment: scroll;*/
+      background-attachment: fixed;
+    }
 
     .chartcont{
     width: 300px;

@@ -5,9 +5,21 @@ AOS.init();
 // });
 
 var myScroll = new IScroll('.imgbox', {
-    mouseWheel: true,
-    scrollbars: false
+     
+        fade: false,
+        ignoreBoundaries: false,
+        interactive: false,
+        listenX: true,
+        listenY: true,
+        resize: true,
+        shrink: false,
+        speedRatioX: 0,
+        speedRatioY: 0,
+        bindToWrapper: true
+    
 });
+
+myScroll.scrollTo(0, -100);
 
 let images = document.querySelectorAll(".video-js");
 lazyload(images);

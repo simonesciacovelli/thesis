@@ -4,6 +4,17 @@ AOS.init();
 //     this.play();
 // });
 
+
+
+let images = document.querySelectorAll(".video-js");
+lazyload(images);
+
+new LazyLoad(images, {
+     root: null,
+     rootMargin: "0px",
+     threshold: 0
+});
+
 function isInView(el) {
     windowTop = $(window).scrollTop();
     windowButtom = windowTop + $(window).height();

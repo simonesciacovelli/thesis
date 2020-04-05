@@ -161,13 +161,14 @@ margin-bottom: 200px;
   height: 150px;
   width: 307px;
   margin-top: 21px;
-  background-image: url("shape_10.png");
+  /*background-image: url("shape_10.png");*/
   /*background-attachment: fixed;*/
-  background-position: center;
+  /*background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;*/
   border-radius: 10px;
-  background-attachment: scroll;
+  overflow: hidden;
+  /*background-attachment: scroll;*/
 }
 
 .imgbox2{

@@ -4,7 +4,10 @@ AOS.init();
 //     this.play();
 // });
 
-
+var myScroll = new IScroll('.imgbox', {
+    mouseWheel: true,
+    scrollbars: false
+});
 
 let images = document.querySelectorAll(".video-js");
 lazyload(images);

@@ -162,7 +162,8 @@ margin-bottom: 200px;
   width: 307px;
   margin-top: 21px;
   border-radius: 10px;
-   display: -webkit-box;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -872,11 +873,6 @@ z-index: 100;
     .shapedesc{
       width: 350px
     } 
-
-    .imgbox, .imgbox2, .imgbox3, .imgbox4{
-      /*background-attachment: scroll;*/
-      background-attachment: fixed;
-    }
 
     .chartcont{
     width: 300px;

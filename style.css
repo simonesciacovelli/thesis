@@ -161,53 +161,17 @@ margin-bottom: 200px;
   height: 150px;
   width: 307px;
   margin-top: 21px;
-  /*background-image: url("shape_10.png");*/
-  /*background-attachment: fixed;*/
-  /*background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
   border-radius: 10px;
+   display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
-  /*background-attachment: scroll;*/
-}
-
-.imgbox2{
-  height: 150px;
-  width: 307px;
-  margin-top: 21px;
-  background-image: url("shape_9.png");
-  /*background-attachment: fixed;*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  background-attachment: scroll;
-}
-
-.imgbox3{
-  height: 150px;
-  width: 307px;
-  margin-top: 21px;
-  background-image: url("shape_6.png");
-/*  background-attachment: fixed;*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  background-attachment: scroll;
-}
-
-.imgbox4{
-  height: 150px;
-  width: 307px;
-  margin-top: 21px;
-  background-image: url("shape_3.png");
-  /*background-attachment: fixed;*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  background-attachment: scroll;
+  background-color: black;
 }
 
 .param{

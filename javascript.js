@@ -19,36 +19,15 @@ AOS.init();
     
 // });
 
-// Disable touch events
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-// Patch iScroll for position change custom event
-iScroll.prototype._oldPos = iScroll.prototype._pos;
-iScroll.prototype._pos = function(x, y) {
-    this._oldPos(x, y);
-    if (this.options.onPositionChange) this.options.onPositionChange.call(this);
-}
-
-$(function() {
-    var $win = $(window),
-        $div_cols = $('#cols'),
-        $div_rows = $('#rows'),
-        $div_body = $('#body')
-
-    // attach scrolling sync handler and execute it once
-    function sync_scroll(e) {
-        $div_cols.scrollLeft(0 - $div_body.position().left);
-        $div_rows.scrollTop(0 - $div_body.position().top);
-
-    }           
-
-    // initialize iScroll on wrapper div, with position change handler
-    var myScroll = new iScroll('.imgbox', {
-        bounce: false,
-        onPositionChange: sync_scroll
-    });
-})
-
+var rellax = new Rellax('.imgboximg', {
+    speed: 7,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false
+  });
 
 
 let images = document.querySelectorAll(".video-js");

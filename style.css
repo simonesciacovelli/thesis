@@ -117,6 +117,112 @@ html{
   justify-content: center;
 }
 
+.intro p{
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.intro{
+margin-bottom: 200px;
+}
+
+.anatomy{
+   width: 100%;
+  height: auto;
+  z-index: 2000;
+  /*border-bottom: 1px solid white;*/
+  background-color:black;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.anatomygraph{
+  background-color: #121212;
+  border-radius: 20px;
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imgbox{
+  height: 150px;
+  width: 307px;
+  margin-top: 21px;
+  background-image: url("shape_10.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.imgbox2{
+  height: 150px;
+  width: 307px;
+  margin-top: 21px;
+  background-image: url("shape_9.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.imgbox3{
+  height: 150px;
+  width: 307px;
+  margin-top: 21px;
+  background-image: url("shape_6.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.imgbox4{
+  height: 150px;
+  width: 307px;
+  margin-top: 21px;
+  background-image: url("shape_3.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.param{
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.param img{
+  height: 83px;
+  width: 83px;
+}
+
 .sept, .sept2, .sept3, .sept4{
   width: 100%;
   display: -webkit-box;
@@ -354,17 +460,6 @@ video{
 #arrow{
   height: 60px;
   width: 60px;
-}
-
-
-#Layer_1{
-  height: auto;
-  width: 100%;
-  margin-top: 20px;
-}
-
-.anatomygraph{
-  height: auto;
 }
 
 

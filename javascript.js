@@ -4,22 +4,52 @@ AOS.init();
 //     this.play();
 // });
 
-var myScroll = new IScroll('.imgbox', {
+// var myScroll = new IScroll('.imgbox', {
      
-        fade: false,
-        ignoreBoundaries: false,
-        interactive: false,
-        listenX: true,
-        listenY: true,
-        resize: true,
-        shrink: false,
-        speedRatioX: 0,
-        speedRatioY: 0,
-        bindToWrapper: true
+//         fade: false,
+//         ignoreBoundaries: false,
+//         interactive: false,
+//         listenX: true,
+//         listenY: true,
+//         resize: true,
+//         shrink: false,
+//         speedRatioX: 0,
+//         speedRatioY: 0,
+//         bindToWrapper: true,
     
-});
+// });
 
-myScroll.scrollTo(0, -100);
+// Disable touch events
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+// Patch iScroll for position change custom event
+iScroll.prototype._oldPos = iScroll.prototype._pos;
+iScroll.prototype._pos = function(x, y) {
+    this._oldPos(x, y);
+    if (this.options.onPositionChange) this.options.onPositionChange.call(this);
+}
+
+$(function() {
+    var $win = $(window),
+        $div_cols = $('#cols'),
+        $div_rows = $('#rows'),
+        $div_body = $('#body')
+
+    // attach scrolling sync handler and execute it once
+    function sync_scroll(e) {
+        $div_cols.scrollLeft(0 - $div_body.position().left);
+        $div_rows.scrollTop(0 - $div_body.position().top);
+
+    }           
+
+    // initialize iScroll on wrapper div, with position change handler
+    var myScroll = new iScroll('.imgbox', {
+        bounce: false,
+        onPositionChange: sync_scroll
+    });
+})
+
+
 
 let images = document.querySelectorAll(".video-js");
 lazyload(images);

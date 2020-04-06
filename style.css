@@ -1,6 +1,6 @@
 :focus { outline: none; }
 
-*::-webkit-media-controls-start-playback-button {
+/**::-webkit-media-controls-start-playback-button {
   display: none!important;
   -webkit-appearance: none !important;
 }
@@ -11,7 +11,7 @@ video::-webkit-media-controls {
 
 ::-webkit-media-controls {
   display:none !important;
-}
+}*/
 
 #myCanvas { 
  /* height: 300px;
@@ -31,7 +31,7 @@ html, body{
 
 .videocont{
   width: 100%;
-  height: 100%;
+  height: 700px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -209,6 +209,18 @@ margin-bottom: 200px;
 
 .space{
   height: 420px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacetop{
+  height: 150px;
   width: 100%;
   display: -webkit-box;
   display: -moz-box;
@@ -794,7 +806,7 @@ z-index: 100;
   background-color: rgba(13, 13, 13, 1);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 200px;
 }
 
 
@@ -844,7 +856,7 @@ z-index: 100;
 }
 
 @supports (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em)) {
-  .menunav, .contextmenu{
+  .menunav, .contextmenu, #mySidenav{
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     background-color: rgba(13, 13, 13, 0.5);  

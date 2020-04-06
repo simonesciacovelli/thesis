@@ -1,5 +1,14 @@
 AOS.init();
 
+// $(document).ready(function() {
+//   $(",menunav").click(function() {
+//     $(".sidenav").css("opacity", "1");
+//   });
+// });
+
+$('[data-sidenav]').sidenav();
+
+
 // videojs('#my-video').ready(function() {
 //     this.play();
 // });
@@ -220,13 +229,26 @@ anime({
   loop: true
 });
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+
+// function openNav() {
+//   document.getElementById("mySidenav").style.width = "250px";
+// }
+
+// function closeNav() {
+//   document.getElementById("mySidenav").style.width = "150px";
+// }
+
+
+
+// $(document).ready(function() {
+//   $("#mtogg").click(function() {
+//     console.log()
+//     $("#mySidenav").toggle();
+//   });
+// });
+
+
 
 $("#button").click(function() {
     $('html, body').animate({

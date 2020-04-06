@@ -22,6 +22,8 @@
 <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" />
 
 
+
+
 <!--  <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" /> -->
 <!-- <link href="https://vjs.zencdn.net/7.6.6/video-js.css" rel="stylesheet" /> -->
 <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
@@ -38,10 +40,153 @@
 
 <!-- ------nav------ -->
 
-<div class="sidenav" id="mySidenav">
+<nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+  <div class="sidenav-brand">
+    BRAND
+  </div>
+
+  <div class="sidenav-header">
+    Section Header
+    <small>secondary text</small>
+  </div>
+
+  <ul class="sidenav-menu">
+    <li>
+      <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+        <span class="sidenav-link-icon">
+          <i class="material-icons">store</i>
+        </span>
+        <span class="sidenav-link-title">Lorem ipsum</span>
+        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_down</i>
+        </span>
+        <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_up</i>
+        </span>
+      </a>
+
+      <ul class="sidenav-dropdown" data-sidenav-dropdown>
+        <li><a href="javascript:;">Dolor sit amet</a></li>
+        <li><a href="javascript:;">Consectetur adipisicing</a></li>
+        <li><a href="javascript:;">Elit</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="javascript:;" data-sidenav-dropdown-toggle>
+        <span class="sidenav-link-icon">
+          <i class="material-icons">payment</i>
+        </span>
+        <span class="sidenav-link-title">Sed do eiusmod</span>
+        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_down</i>
+        </span>
+        <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_up</i>
+        </span>
+      </a>
+
+      <ul class="sidenav-dropdown" data-sidenav-dropdown>
+        <li><a href="javascript:;">Tempor incididunt</a></li>
+        <li><a href="javascript:;">Labore</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="javascript:;" data-sidenav-dropdown-toggle>
+        <span class="sidenav-link-icon">
+          <i class="material-icons">shopping_cart</i>
+        </span>
+        <span class="sidenav-link-title">Dolore magna</span>
+        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_down</i>
+        </span>
+        <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_up</i>
+        </span>
+      </a>
+
+      <ul class="sidenav-dropdown" data-sidenav-dropdown>
+        <li><a href="javascript:;">Aliqua</a></li>
+        <li><a href="javascript:;">Exercitation</a></li>
+        <li><a href="javascript:;">Minim veniam</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <span class="sidenav-link-icon">
+          <i class="material-icons">assignment_ind</i>
+        </span>
+        <span class="sidenav-link-title">Nostrud ullamco</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <span class="sidenav-link-icon">
+          <i class="material-icons">alarm</i>
+        </span>
+        <span class="sidenav-link-title">Commodo</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="sidenav-header">
+    Another Section Header
+  </div>
+
+  <ul class="sidenav-menu">
+    <li>
+      <a href="javascript:;" data-sidenav-dropdown-toggle>
+        <span class="sidenav-link-icon">
+          <i class="material-icons"><a href="https://www.jqueryscript.net/time-clock/">date</a>_range</i>
+        </span>
+        <span class="sidenav-link-title">Reprehenderit</span>
+        <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_down</i>
+        </span>
+        <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+          <i class="material-icons">arrow_drop_up</i>
+        </span>
+      </a>
+
+      <ul class="sidenav-dropdown" data-sidenav-dropdown>
+        <li><a href="javascript:;">Voluptate</a></li>
+        <li><a href="javascript:;">Excepteur</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <span class="sidenav-link-icon">
+          <i class="material-icons">backup</i>
+        </span>
+        <span class="sidenav-link-title">Occaecat</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:;">
+        <span class="sidenav-link-icon">
+          <i class="material-icons">settings</i>
+        </span>
+        <span class="sidenav-link-title">Deserunt</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+<a href="javascript:;" class="toggle" id="sidenav-toggle">
+  <i class="material-icons"></i>
+</a>
+
+
+
+
+
+
+
+<!-- <div class="sidenav" id="mySidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-  <!-- <a id="nav3" href="#">FRM_A01</a>
+  <div id="" class="closebtn">&times;</div>
+  <a id="nav3" href="#">FRM_A01</a>
   <a id="nav4" href="#">FRM_A02</a>
   <a id="nav5" href="#">FRM_A03</a>
   <a id="nav6" href="#">FRM_A04</a>
@@ -50,7 +195,7 @@
   <a id="nav9" href="#">FRM_A07</a>
   <a id="nav10" href="#">FRM_A08</a>
   <a id="nav11" href="#">FRM_A09</a>
-  <a id="nav12" href="#">FRM_A010</a> -->
+  <a id="nav12" href="#">FRM_A010</a>
   <a id="nav13" href="#">ANATOMY</a>
   <a id="nav14" href="#">SHAPE</a>
   <a id="nav1" href="#">COLOR</a>
@@ -62,9 +207,13 @@
   <a id="nav1" href="#">ABOUT</a>
 </div>
 
-	<div class="menunav">
+	<div id="mtogg" class="menunav">
+		<span class="hmenu" style="font-size:50px;cursor:pointer">•</span>
+	</div> -->
+
+<!-- 	<div class="menunav">
 		<span class="hmenu" style="font-size:50px;cursor:pointer" onclick="openNav()">•</span>
-	</div>
+	</div> -->
 
 <!-- ------nav------ -->
 
@@ -481,6 +630,7 @@
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="sidenav.min.js"></script>
 <script src="https://vjs.zencdn.net/7.3.0/video.min.js"></script>
 <script type="text/javascript" src="rellax.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>

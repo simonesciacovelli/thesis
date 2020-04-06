@@ -1,5 +1,24 @@
 AOS.init();
 
+// videojs('#my-video').ready(function() {
+//     this.play();
+// });
+
+// var myScroll = new IScroll('.imgbox', {
+     
+//         fade: false,
+//         ignoreBoundaries: false,
+//         interactive: false,
+//         listenX: true,
+//         listenY: true,
+//         resize: true,
+//         shrink: false,
+//         speedRatioX: 0,
+//         speedRatioY: 0,
+//         bindToWrapper: true,
+    
+// });
+
 
 var rellax = new Rellax('.imgboximg', {
     speed: 7,
@@ -11,14 +30,14 @@ var rellax = new Rellax('.imgboximg', {
   });
 
 
-let images = document.querySelectorAll(".video-js");
-lazyload(images);
+// let images = document.querySelectorAll(".video-js");
+// lazyload(images);
 
-new LazyLoad(images, {
-     root: null,
-     rootMargin: "0px",
-     threshold: 0
-});
+// new LazyLoad(images, {
+//      root: null,
+//      rootMargin: "0px",
+//      threshold: 0
+// });
 
 function isInView(el) {
     windowTop = $(window).scrollTop();
@@ -29,17 +48,17 @@ function isInView(el) {
     return (elTop >= windowTop && elButtom <= windowButtom);
 }
 
-$(window).scroll(function() {
-    $('.imgcont').find("video").each(function() {
-        if(isInView(this)) {
-            this.play();
-            $(this).css('opacity', '1');
-        } else {
-            this.pause();
-            $(this).css('opacity', '0');
-        }
-    });
-});
+// $(window).scroll(function() {
+//     $('.imgcont').find("video").each(function() {
+//         if(isInView(this)) {
+//             this.play();
+//             $(this).css('opacity', '1');
+//         } else {
+//             this.pause();
+//             $(this).css('opacity', '0');
+//         }
+//     });
+// });
 
 $(window).scroll(function() {
     $('.imgcont').each(function() {
@@ -53,15 +72,15 @@ $(window).scroll(function() {
 
 
 
-const loadingManager = new THREE.LoadingManager( () => {
+// const loadingManager = new THREE.LoadingManager( () => {
 
-    const loadingScreen = document.getElementById( 'loading-screen' );
-    loadingScreen.classList.add( 'fade-out' );
+//     const loadingScreen = document.getElementById( 'loading-screen' );
+//     loadingScreen.classList.add( 'fade-out' );
 
-    // optional: remove loader from DOM via event listener
-    loadingScreen.addEventListener( 'transitionend', onTransitionEnd );
+//     // optional: remove loader from DOM via event listener
+//     loadingScreen.addEventListener( 'transitionend', onTransitionEnd );
 
-} );
+// } );
 
 
 
@@ -70,7 +89,6 @@ $("#arrowdown").click(function() {
         scrollTop: $("#txt").offset().top
     }, 1000);
 });
-
 
 
 Chart.Legend.prototype.afterFit = function() {

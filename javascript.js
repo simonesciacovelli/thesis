@@ -1,23 +1,30 @@
 AOS.init();
 
-// videojs('#my-video').ready(function() {
-//     this.play();
-// });
+        $(document).ready(function() {
+            // Get media - with autoplay disabled (audio or video)
+            var media = $('video').not("[autoplay='autoplay']");
+            var tolerancePixel = 40;
 
-// var myScroll = new IScroll('.imgbox', {
-     
-//         fade: false,
-//         ignoreBoundaries: false,
-//         interactive: false,
-//         listenX: true,
-//         listenY: true,
-//         resize: true,
-//         shrink: false,
-//         speedRatioX: 0,
-//         speedRatioY: 0,
-//         bindToWrapper: true,
-    
-// });
+            function checkMedia(){
+                // Get current browser top and bottom
+                var scrollTop = $(window).scrollTop() + tolerancePixel;
+                var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+                media.each(function(index, el) {
+                    var yTopMedia = $(this).offset().top;
+                    var yBottomMedia = $(this).height() + yTopMedia;
+
+                    if(scrollTop < yBottomMedia && scrollBottom > yTopMedia){ //view explaination in `In brief` section above
+                        $(this).get(0).play();
+                    } else {
+                        $(this).get(0).pause();
+                    }
+                });
+
+                //}
+            }
+            $(document).on('scroll', checkMedia);
+        });
 
 
 var rellax = new Rellax('.imgboximg', {
@@ -30,14 +37,14 @@ var rellax = new Rellax('.imgboximg', {
   });
 
 
-let images = document.querySelectorAll(".video-js");
-lazyload(images);
+// let images = document.querySelectorAll(".video-js");
+// lazyload(images);
 
-new LazyLoad(images, {
-     root: null,
-     rootMargin: "0px",
-     threshold: 0
-});
+// new LazyLoad(images, {
+//      root: null,
+//      rootMargin: "0px",
+//      threshold: 0
+// });
 
 function isInView(el) {
     windowTop = $(window).scrollTop();
@@ -89,6 +96,7 @@ $("#arrowdown").click(function() {
         scrollTop: $("#txt").offset().top
     }, 1000);
 });
+
 
 
 Chart.Legend.prototype.afterFit = function() {

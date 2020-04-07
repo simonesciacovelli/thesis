@@ -17,6 +17,15 @@ video::-webkit-media-controls {
   display:none !important;
 }*/
 
+/**{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+
+#bkanim{
+  background-color: #000;
+}
+
 #myCanvas { 
  /* height: 300px;
   width: 300px;*/

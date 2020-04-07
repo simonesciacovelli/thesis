@@ -259,3 +259,11 @@ $("#button").click(function() {
 if($(".contextmenu").css("display", "none")); {
     $('.arrowdown').css('opacity') == 1;
 }
+
+
+
+// --------bkanim-------
+
+
+
+

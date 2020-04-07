@@ -8,6 +8,10 @@ AOS.init();
 
 $('[data-sidenav]').sidenav();
 
+  $(function() {
+        $('img').Lazy();
+        $('.video-js').Lazy();
+    });
 
 // videojs('#my-video').ready(function() {
 //     this.play();

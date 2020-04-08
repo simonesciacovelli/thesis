@@ -149,7 +149,16 @@ html{
   height: 100%;
 }
 
-
+.antmtxt{
+    display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .intro p{
   margin-bottom: 10px;
@@ -220,6 +229,8 @@ margin-bottom: 200px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin-top: 400px;
+  margin-bottom: 300px;
 }
 
 .param img{
@@ -253,6 +264,18 @@ margin-bottom: 200px;
   justify-content: center;
 }
 
+.spacetitle{
+  height: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
 .spacetop{
   height: 150px;
   width: 100%;
@@ -266,9 +289,10 @@ margin-bottom: 200px;
 }
 
 .sline{
-  height: 10px;
+  /*height: 10px;*/
   width: 300px;
   border-top: 1px solid white;
+  margin-left: 20px;
 }
 
 .sept img{
@@ -305,9 +329,9 @@ margin-bottom: 200px;
 }
 
 h1{
-  font-family: laca-text, sans-serif;
-  font-size: 85px;
-  font-weight: 100;
+  font-family: ff-speak-web, sans-serif;
+  font-size: 95px;
+  font-weight: 300;
   margin-bottom: 0px;
   /*padding-left: 90px;*/
   color: white;
@@ -321,7 +345,6 @@ p{
   font-size: 20px;
   font-weight: 400;
   color: white;
-  padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 120px;
 }
@@ -1143,7 +1166,7 @@ z-index: 100;
 @media only screen and (max-width: 1024px) {
 
     .txt{
-      width: 350px
+      width: 350px;
     } 
 
     .contextmenu p {
@@ -1151,10 +1174,14 @@ z-index: 100;
         font-size: 20px;
         font-weight: 200;
         margin: 0px;
-}
+    }
+
+    /*.anatomygraph{
+      width: 500px;
+    }*/
 
     h1{
-      font-size: 50px;
+      font-size: 56px;
       padding-left: 16px;
     }
 

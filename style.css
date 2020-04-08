@@ -146,7 +146,15 @@ html{
 
 .imgstory{
   overflow: hidden;
-  height: 100%;
+  height: auto;
+    display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .antmtxt{
@@ -201,9 +209,9 @@ margin-bottom: 200px;
 }
 
 .imgbox{
-  height: 150px;
-  width: 307px;
-  margin-top: 21px;
+  height: 200px;
+  width: 617px;
+  margin-top: 41px;
   border-radius: 10px;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   display: -webkit-box;
@@ -234,8 +242,8 @@ margin-bottom: 200px;
 }
 
 .param img{
-  height: 83px;
-  width: 83px;
+  height: 183px;
+  width: 183px;
 }
 
 .sept, .sept2, .sept3, .sept4{
@@ -273,7 +281,7 @@ margin-bottom: 200px;
   display: -webkit-flex;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
 }
 
 .spacetop{
@@ -325,7 +333,16 @@ margin-bottom: 200px;
 
 .txt{
   height: auto;
-  width: 500px;
+  width: 700px;
+}
+
+.txt h1{
+padding-left: 50px;
+}
+
+.txt p{
+  padding: 50px;
+  padding-top: 0px !important;
 }
 
 h1{
@@ -432,7 +449,9 @@ p{
   display: -webkit-flex;
   display: flex;
   opacity: 0;
-  border: solid #121212 10px;
+  /*border: solid #121212 10px;*/
+  border: solid white 3px;
+
   transition: 0.8s;
   align-items: center;
 /*  flex-direction: row;*/
@@ -1120,9 +1139,32 @@ z-index: 100;
 
 
 
-/*-----@media-----*/
+/*-----@media MOBILE-----*/
 
 @media only screen and (max-width: 1024px) {
+
+    .param img{
+      height: 83px;
+      width: 83px;
+    }
+
+    .imgbox{
+      height: 150px;
+      width: 307px;
+      margin-top: 21px;
+      border-radius: 10px;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      background-color: black;
+    }
 
     .shapedesc{
       width: 350px
@@ -1159,8 +1201,6 @@ z-index: 100;
 
 
 
-
-
 /*-----@mediashape-----*/
 
 @media only screen and (max-width: 1024px) {
@@ -1168,6 +1208,25 @@ z-index: 100;
     .txt{
       width: 350px;
     } 
+
+    .txt p{
+      padding: 20px;
+    } 
+
+    .txt h1{
+      padding-left: 17px !important;
+    }
+
+    .spacetitle{
+      height: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    }
 
     .contextmenu p {
         color: white;

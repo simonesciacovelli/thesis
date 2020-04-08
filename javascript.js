@@ -6,12 +6,19 @@ AOS.init();
 //   });
 // });
 
+
+$('.plybtn').click(function(){
+  $('#my-video_1').get(0).play()
+});
+
+
+
 $('[data-sidenav]').sidenav();
 
-  $(function() {
-        $('img').Lazy();
-        $('.video-js').Lazy();
-    });
+  // $(function() {
+  //   $('img').Lazy();
+  //       $('.video-js').Lazy();
+  //   });
 
 // videojs('#my-video').ready(function() {
 //     this.play();

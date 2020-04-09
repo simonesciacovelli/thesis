@@ -168,9 +168,36 @@ html{
   justify-content: center;
 }
 
+.wirecont{
+  overflow: hidden;
+  border-radius: 20px;
+  width: 300px;
+  margin-bottom: 40px;
+  height: auto;
+}
+
 .imgstory2 img{
   height: 200px;
   width: auto;
+}
+
+
+
+.anatomparam{
+    overflow: hidden;
+  height: auto;
+    display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.anatomparam img{
+  width: 620px;
 }
 
 .antmtxt{
@@ -257,7 +284,7 @@ margin-bottom: 200px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 400px;
+  /*margin-top: 400px;*/
   margin-bottom: 300px;
 }
 
@@ -363,6 +390,12 @@ margin-bottom: 200px;
   justify-content: center;
 }
 
+.header h1{
+margin:0px;
+padding: 0px;
+text-align: center;
+}
+
 .txt{
   height: auto;
   width: 700px;
@@ -427,8 +460,7 @@ p{
 
 .header p{
    font-size: 25px;
-   padding-top: 0px;
-   padding-left: 0px;
+   padding: 0px;
    background: none !important;
    width: auto !important;
 }

@@ -1251,7 +1251,9 @@ border-radius: 3px;
   font-size: 19.2px;
   line-height: 32px;
   margin: 0;
-  padding: 16px 24px 15px; 
+  margin-top: 30px;
+  margin-bottom: 30px;
+/*  padding: 20px !important; */
 }
   .sidenav-header small {
     display: block;

@@ -133,6 +133,7 @@ html{
 .intro p{
   background:none !important;
   width: auto !important; 
+  border:none !important;
 }
 
 .storytxt{
@@ -446,7 +447,7 @@ p{
   color: white;
   border-bottom: 5px solid #121212;
   padding-top: 10px;
-  border-radius: 10px;
+ /* border-radius: 10px;*/
   padding-bottom: 120px;
 }
 

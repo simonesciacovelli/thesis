@@ -137,7 +137,7 @@ html{
 
 .storytxt{
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-color:black;
   display: -webkit-box;
   display: -moz-box;
@@ -414,7 +414,7 @@ h1{
   font-family: ff-speak-web, sans-serif;
   font-size: 95px;
   font-weight: 300;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   /*padding-left: 90px;*/
   /*color: white;*/
@@ -441,9 +441,10 @@ p{
   width: 250px;
   font-family: source-sans-pro, sans-serif;
   font-size: 20px;
-  background-color: #121212;
-  font-weight: 400;
+  /*background-color: #121212;*/
+  font-weight: 200;
   color: white;
+  border-bottom: 5px solid #121212;
   padding-top: 10px;
   border-radius: 10px;
   padding-bottom: 120px;
@@ -454,7 +455,7 @@ p{
   font-family: source-sans-pro, sans-serif;
   font-size: 20px;
   background-color: #121212;
-  font-weight: 400;
+  font-weight: 100;
   color: white;
 }
 
@@ -463,6 +464,7 @@ p{
    padding: 0px;
    background: none !important;
    width: auto !important;
+   border:none !important;
 }
 
 .contentinfo:hover .popinfo {
@@ -470,7 +472,7 @@ p{
 }
 
 .contentinfo{
-  /*padding: 10px;*/
+  /*padding: 10px;
   z-index: 100;
   /*width:100%;*/
   transition: 0.4s;
@@ -617,9 +619,10 @@ a{
 .contentinfo h1{
 
   text-decoration: none;
-  font-size: 40px;
+  font-size: 35px;
   float: left;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .linkcont{
@@ -995,6 +998,95 @@ z-index: 100;
   background-color: #121212;
 }
 
+.behav{
+  margin-top: 40px;
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  padding: 55px;
+  margin-bottom: 40px;
+  background-color: #121212;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.barin{
+width: 200px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin2{
+width: 100px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin3{
+width: 30px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin4{
+width: 120px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin5{
+width: 80px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin6{
+width: 30px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin7{
+width: 190px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin8{
+width: 139px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin9{
+width: 200px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barin10{
+width: 157px;
+height: 22px;
+background-color: #d8d7d7;
+}
+
+.barout{
+overflow: hidden;
+width: 230px;
+margin-top: 15px;
+margin-bottom: 15px;
+background-color: #1f1f1f;
+height: 20px;
+border-radius: 3px;
+}
+
+
 .heroimg{
   width: 100%;
   height: auto;
@@ -1325,6 +1417,12 @@ z-index: 100;
     }
 
   .freq{
+    width: 300px;
+    padding: 10px;
+    }
+
+  .behav{
+    margin-top: 0px;
     width: 300px;
     padding: 10px;
     }

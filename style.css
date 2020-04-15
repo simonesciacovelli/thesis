@@ -55,6 +55,10 @@ html, body{
   justify-content: center;
 }
 
+#my-video{
+  transition: 0.5s;
+}
+
 /*.video-js .vjs-volume-panel{
   display: none !important;
 }

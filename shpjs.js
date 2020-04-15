@@ -1,6 +1,13 @@
-var lazyLoadInstance = new LazyLoad({
-    elements_selector: ".lazy"
+
+
+$( document ).ready(function() {
+  var lazyLoadInstance = new LazyLoad({
+      elements_selector: ".lazy"
+  });
+  
+  $('#my-video').get(0).play()
 });
+
 
 
 $("#arrowdown").click(function() {

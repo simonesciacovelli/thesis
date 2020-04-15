@@ -125,7 +125,7 @@
         $("#loading-screen").css("opacity", "0");
 
         $(function () {
-        $('#my-video').get(0).play()
+        // $('#my-video').get(0).play()
             $(".contextmenu").delay(50).fadeIn('slow', function () {
                 $(this).delay(5000).fadeOut('slow');
                 $("#arrowdown").delay(5000).fadeIn('slow');
@@ -204,12 +204,12 @@
 <div class="heroimg">
         <video autoplay loop muted playsinline style="width: 480px; height: 480px" 
         id="my-video"
-        class="video-js vjs-default-skin vjs-big-play-centered"
+        class="lazy"
         preload="auto"
         nativeControlsForTouch="false"
         width="100%"
         height="100%">
-        <source src="shape7a.mp4" type="video/mp4" />
+        <source data-src="shape7a.mp4" type="video/mp4" />
     </video>
 </div>
 
@@ -233,6 +233,7 @@
 <script type="text/javascript" src="chart.min.js"></script>
 <script type="text/javascript" src="chartjs-plugin-deferred.js"></script>
 <script src="anime.min.js"></script>
+<script src="lazyload.min.js"></script>
 <script type="text/javascript" src="shpjs.js"></script>
 
 </body>

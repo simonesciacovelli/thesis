@@ -1,5 +1,9 @@
 AOS.init();
 
+var lazyLoadInstance = new LazyLoad({
+    elements_selector: ".lazy"
+});
+
 
 $('.imgcont_1, .plybtn_1').click(function(){
   $('#my-video_1').get(0).play()

@@ -79,7 +79,7 @@ $('[data-sidenav]').sidenav();
 
 
 var rellax = new Rellax('.imgboximg', {
-    speed: 7,
+    speed: 3,
     center: true,
     wrapper: null,
     round: true,

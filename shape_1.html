@@ -79,10 +79,16 @@
       antialias: true
     });
 
+
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.setClearColor(0x000000);
-    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize(window.innerWidth, window.innerHeight);
 	document.body.appendChild(renderer.domElement);
+
+
+    var pmremGenerator = new THREE.PMREMGenerator( renderer );
+    pmremGenerator.compileEquirectangularShader();
 
 
     camera = new THREE.PerspectiveCamera( 30, window.innerWidth / window.innerHeight, 1, 10000 );
@@ -166,8 +172,6 @@
     element.remove();
     
 }
-
-
 
 </script>
 

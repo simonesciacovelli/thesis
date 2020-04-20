@@ -117,7 +117,15 @@ $(window).scroll(function() {
     });
 });
 
-
+anime({
+  targets: '.cls-1',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 8500,
+  delay: function(el, i) { return i * 250 },
+  direction: 'alternate',
+  loop: true
+});
 
 
 

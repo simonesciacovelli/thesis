@@ -17,6 +17,8 @@ video::-webkit-media-controls {
   display:none !important;
 }*/
 
+
+
 /**{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -33,7 +35,7 @@ video::-webkit-media-controls {
   /*border-radius: 10px;*/
   display: block; 
   cursor:all-scroll;
-  margin-bottom: 90px;
+  margin-bottom: 190px;
 }
 
 html, body{
@@ -46,11 +48,14 @@ html, body{
 
 
 
+#blackstory{
+  height: 20px !important;
+}
 
 
 
-
-#Layer_1{
+.cls-1{
+  background-color: black;
 }
 
 .videocont{
@@ -145,10 +150,26 @@ html{
   justify-content: center;
 }
 
+.intro{
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 200px;
+  margin-top: 300px;
+}
+
 .intro p{
   background:none !important;
   width: auto !important; 
   border:none !important;
+  padding-top: 200px;
 }
 
 .storytxt{
@@ -189,20 +210,22 @@ html{
   border-radius: 20px;
   width: 300px;
   margin-bottom: 40px;
-  height: auto;
+  height: 200px;
 }
 
 .imgstory2 img{
-  height: 200px;
+  height: 210px;
   width: auto;
 }
 
 
 
 .anatomparam{
-    overflow: hidden;
+  height: 300px;
+  overflow: hidden;
   height: auto;
-    display: -webkit-box;
+  margin-bottom: 100px;
+  display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -233,7 +256,7 @@ html{
 }
 
 .intro{
-margin-bottom: 200px;
+
 }
 
 .anatomy{
@@ -266,15 +289,16 @@ margin-bottom: 200px;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  padding: 20px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
 .imgbox{
-  height: 200px;
-  width: 617px;
-  margin-top: 41px;
+  height: 190px;
+  width: 517px;
+  margin-top: 40px;
   border-radius: 10px;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   display: -webkit-box;
@@ -287,6 +311,7 @@ margin-bottom: 200px;
   justify-content: center;
   overflow: hidden;
   background-color: black;
+  margin-bottom: 47px;
 }
 
 .param{
@@ -301,12 +326,14 @@ margin-bottom: 200px;
   justify-content: center;
   flex-direction: row;
   /*margin-top: 400px;*/
-  margin-bottom: 300px;
+  /*margin-bottom: 300px;*/
 }
 
-.param img{
-  height: 183px;
-  width: 183px;
+
+
+#anatimg {
+  height: 383px;
+  width: auto;
 }
 
 .sept, .sept2, .sept3, .sept4{
@@ -394,7 +421,7 @@ margin-bottom: 200px;
 .header{
   width: 100%;
   height: 500px;
-  margin-bottom: 120px;
+
   /*border-bottom: 1px solid white;*/
   display: -webkit-box;
   display: -moz-box;
@@ -406,6 +433,26 @@ margin-bottom: 200px;
   justify-content: center;
 }
 
+.header1{
+  width: 100%;
+  height: 500px;
+
+  /*border-bottom: 1px solid white;*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header1 svg{
+  height: 240px;
+}
+
+
 .header h1{
 margin:0px;
 padding: 0px;
@@ -414,7 +461,15 @@ text-align: center;
 
 .txt{
   height: auto;
-  width: 700px;
+  width: 600px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .txt h1{
@@ -422,8 +477,8 @@ padding-left: 50px;
 }
 
 .txt p{
-  padding: 50px;
-  padding-top: 0px !important;
+  padding: 60px;
+  /*padding-top: 0px !important;*/
 }
 
 h1{
@@ -453,14 +508,15 @@ h1{
 }
 
 p{
-  margin-top: 0px;
+  margin: 0px !important;
   width: 250px;
   font-family: source-sans-pro, sans-serif;
   font-size: 20px;
   /*background-color: #121212;*/
   font-weight: 200;
   color: white;
-  border-bottom: 5px solid #121212;
+  text-align: center;
+/*  border-bottom: 5px solid #121212;*/
   padding-top: 10px;
  /* border-radius: 10px;*/
   padding-bottom: 120px;
@@ -643,9 +699,10 @@ a{
 
 .linkcont{
   background-color: #121212;
-  width: 260px;
-  border-radius: 10px;
-  height: 70px;
+  width: 140px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 50px;
   overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
@@ -653,27 +710,33 @@ a{
   display: -webkit-flex;
   display: flex;
   overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+/*  margin-bottom: 20px;*/
+}
+
+.systmtitle{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-.systmtitle{
-  width: 100%;
-  height: 260px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+
+
+svg{
+  height: 60px;
+  overflow: hidden;
 }
 
 .systmshapes{
   width: 100%;
-  height: 170px;
+  height: 130px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -724,8 +787,11 @@ a{
 }
 
 #arrow{
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  z-index: 200;
+  background-color: #121212;
+  border-radius: 10px;
 }
 
 
@@ -734,7 +800,6 @@ a{
 
 
 .shapedesc p{
-  /*margin-left: 120px;*/
   z-index: 20px;
 }
 
@@ -797,9 +862,6 @@ a{
 
 }
 
-.shape_txt h1{
-  /*margin-left: 120px;*/
-}
 
 .shape_large {
   width: 100%;
@@ -1004,8 +1066,8 @@ z-index: 100;
 
 
 #myChart, #myChart2, #myChart3, #myChart4, #myChart5, #myChart6, #myChart7, #myChart8, #myChart9, #myChart10 {
-   height: 690px;
-   width: 690px;
+   height: 290px;
+   width: auto;
    padding-top: 20px;
 }
 
@@ -1044,19 +1106,31 @@ z-index: 100;
 
 .infocard p {
   text-align: center;
-  margin:0px;
   padding-top: 0px !important;
   padding: 20px;
+  margin: 0px !important;
 }
 
 .freq{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 40px;
   width: 400px;
   height: auto;
   border-radius: 20px;
   padding: 55px;
-  margin-bottom: 40px;
   background-color: #121212;
+}
+
+.freq p{
+  margin:0px !important;
 }
 
 .behav{
@@ -1080,6 +1154,7 @@ z-index: 100;
 .barin{
 width: 200px;
 height: 22px;
+margin-bottom: 40px;
 background-color: #d8d7d7;
 }
 
@@ -1137,11 +1212,12 @@ height: 22px;
 background-color: #d8d7d7;
 }
 
+
 .barout{
 overflow: hidden;
 width: 230px;
 margin-top: 15px;
-margin-bottom: 15px;
+margin-bottom: 25px;
 background-color: #1f1f1f;
 height: 20px;
 border-radius: 3px;
@@ -1437,9 +1513,14 @@ border-radius: 3px;
 
 
 
+
+
 /*------nav--------*/
 
-
+    .param img{
+      height: 83px;
+      width: 83px;
+    }
 
 
 
@@ -1452,10 +1533,27 @@ border-radius: 3px;
       width: 83px;
     }
 
+    .anatomygraph{
+      padding: 0px;
+    }
+
+    svg{
+      height: 35px;
+    }
+
+    .txt p{
+      padding: 30px;
+      /*padding-top: 0px !important;*/
+      background-color: transparent;
+      border: 0px;
+    }
+
+
     .imgbox{
       height: 150px;
       width: 307px;
       margin-top: 21px;
+      margin-bottom: 41px;
       border-radius: 10px;
       -webkit-mask-image: -webkit-radial-gradient(white, black);
       display: -webkit-box;
@@ -1482,6 +1580,7 @@ border-radius: 3px;
   .freq{
     width: 300px;
     padding: 10px;
+    margin-bottom: 40px;
     }
 
   .behav{
@@ -1489,6 +1588,10 @@ border-radius: 3px;
     width: 300px;
     padding: 10px;
     }
+
+  .header1 svg{
+  height: 140px;
+  }
 
     #myChart {
     /*width:700px;*/
@@ -1519,9 +1622,6 @@ border-radius: 3px;
       width: 350px;
     } 
 
-    .txt p{
-      padding: 20px;
-    } 
 
     .txt h1{
       padding-left: 17px !important;
@@ -1542,7 +1642,7 @@ border-radius: 3px;
         color: white;
         font-size: 20px;
         font-weight: 200;
-        margin: 0px;
+        margin: 0px !important;
         border:none;
     }
 
@@ -1552,7 +1652,7 @@ border-radius: 3px;
 
     h1{
       font-size: 56px;
-      padding-left: 16px;
+      /*padding-left: 16px;*/
     }
 
     p{

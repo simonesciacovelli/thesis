@@ -22,6 +22,14 @@ Chart.Legend.prototype.afterFit = function() {
 
 
 
+$('.finalreveal, .plybtns_1').click(function(){
+  $('#my-video').get(0).play()
+  $('.finalreveal').css('opacity', '0');
+  $('.plybtns_1').css('opacity', '0');
+});
+
+
+
 
 
 

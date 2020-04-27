@@ -435,7 +435,7 @@ html{
 
 .header1{
   width: 100%;
-  height: 500px;
+  height: 100%;
 
   /*border-bottom: 1px solid white;*/
   display: -webkit-box;
@@ -943,6 +943,46 @@ svg{
   text-align: center;
   display: inline-block;
   vertical-align: top;
+}
+
+.plybtns_1{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: #121212;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 200;
+  transition: 0.1s;
+}
+
+.finalreveal{
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  z-index: 0;
+  border-radius: 20px;
+  transition: 0.7s;
+}
+
+.plybtns_1:hover{
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  transition: 0.1s;
+}
+
+.playimg{
+  height: 20px;
+  margin-left: 2px;
+  width: 20px;
 }
 
 svg path,
@@ -1511,7 +1551,7 @@ border-radius: 3px;
 
 
 @supports (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em)) {
-  .menunav, .contextmenu, .sidenav, .toggle{
+  .menunav, .contextmenu, .sidenav, .toggle, .finalreveal{
     -webkit-backdrop-filter: blur(40px);
     backdrop-filter: blur(40px);
     background-color: rgba(13, 13, 13, 0.5);  
@@ -1542,6 +1582,15 @@ border-radius: 3px;
       height: 83px;
       width: 83px;
     }
+
+    .finalreveal{
+    width: 350px;
+    height: 380px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 20px;
+    transition: 0.7s;
+}
 
     .anatomygraph{
       padding: 0px;

@@ -12,13 +12,71 @@ $(".sidenav-link-title_1").click(function() {
     }, 1000);
 });
 
+$(".sidenav-link-title_2").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".anatomparam").offset().top
+    }, 1000);
+});
 
-$(".sidenav-link-title_1").click(function() {
+$(".sidenav-link-title_4").click(function() {
     $('html, body').animate({
         scrollTop: $(".intro").offset().top
     }, 1000);
 });
 
+$(".menu1").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s1").offset().top
+    }, 1000);
+});
+
+$(".menu2").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s2").offset().top
+    }, 1000);
+});
+
+$(".menu3").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s3").offset().top
+    }, 1000);
+});
+
+$(".menu4").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s4").offset().top
+    }, 1000);
+});
+
+$(".menu5").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s5").offset().top
+    }, 1000);
+});
+
+$(".menu6").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s6").offset().top
+    }, 1000);
+});
+
+$(".menu7").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s8").offset().top
+    }, 1000);
+});
+
+$(".menu9").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s9").offset().top
+    }, 1000);
+});
+
+$(".menu10").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#s10").offset().top
+    }, 1000);
+});
 // ----nav----
 
 

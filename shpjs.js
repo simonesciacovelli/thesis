@@ -4,8 +4,7 @@ $( document ).ready(function() {
   var lazyLoadInstance = new LazyLoad({
       elements_selector: ".lazy"
   });
-  
-  $('#my-video').get(0).play()
+  // $('#my-video').get(0).play()
 });
 
 

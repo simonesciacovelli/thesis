@@ -760,8 +760,18 @@ svg{
  margin-left: 19px;
 }
 
-.nvg:hover{
+
+#arrow{
+  transition: 0.5s;
+}
+
+.nvg:hover #arrow{
   margin-left: 30px;
+  transition: 0.5s;
+}
+
+.nvgbk:hover #arrow{
+  margin-right: 30px;
   transition: 0.5s;
 }
 
@@ -782,8 +792,8 @@ svg{
 }
 
 .nvgbk:hover{
-  margin-right:30px;
-  transition:0.5s;
+  margin-right: 30px;
+  transition: 0.5s;
 }
 
 #arrow{
